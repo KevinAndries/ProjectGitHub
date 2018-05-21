@@ -1,0 +1,55 @@
+﻿@model DataAccessLayer.Model.FlexDeskDb.Floor
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Floor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FloorId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FloorId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FloorCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FloorCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Svg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Svg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BuildingId)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

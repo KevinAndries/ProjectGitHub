@@ -1,0 +1,56 @@
+﻿@model DataAccessLayer.Model.FlexDeskDb.Floor
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>Floor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FloorId" class="control-label"></label>
+                <input asp-for="FloorId" class="form-control" />
+                <span asp-validation-for="FloorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Number" class="control-label"></label>
+                <input asp-for="Number" class="form-control" />
+                <span asp-validation-for="Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FloorCode" class="control-label"></label>
+                <input asp-for="FloorCode" class="form-control" />
+                <span asp-validation-for="FloorCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Svg" class="control-label"></label>
+                <input asp-for="Svg" class="form-control" />
+                <span asp-validation-for="Svg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BuildingId" class="control-label"></label>
+                <input asp-for="BuildingId" class="form-control" />
+                <span asp-validation-for="BuildingId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

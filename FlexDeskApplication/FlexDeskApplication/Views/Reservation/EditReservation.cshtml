@@ -1,0 +1,56 @@
+﻿
+@model MVC.ViewModels.ReservationViewModel
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReservationUser.StartDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.StartDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReservationUser.EndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.EndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReservationUser.Creator)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.Creator)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReservationUser.CreationDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.CreationDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink(linkText:"Delete",controllerName:"Reservation", actionName: "Delete", routeValues: new { reservationId = Model.ReservationUser.ReservationId }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<p>@Model.ReservationFloor.Name</p>
+<svg height="500" width="500">      
+       @Html.Raw(Model.ReservationFloor.Svg.Replace("id=\"desk" + Model.ReservationUser.FlexDeskId + "\"", "id=\"" + Model.ReservationUser.FlexDeskId + "\" fill=\"green\" "))          
+
+</svg>
+
+
+
+
+
+
+

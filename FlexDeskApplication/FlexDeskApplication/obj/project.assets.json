@@ -13198,7 +13198,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kevin Andries\\.nuget\\packages\\": {},
+    "C:\\Users\\geert\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13207,17 +13207,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\FlexDeskApplication\\MVC.csproj",
+      "projectUniqueName": "C:\\Users\\geert\\Documents\\eindwerk\\FlexDeskApplication Geert\\FlexDeskApplication\\MVC.csproj",
       "projectName": "MVC",
-      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\FlexDeskApplication\\MVC.csproj",
-      "packagesPath": "C:\\Users\\Kevin Andries\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\FlexDeskApplication\\obj\\",
+      "projectPath": "C:\\Users\\geert\\Documents\\eindwerk\\FlexDeskApplication Geert\\FlexDeskApplication\\MVC.csproj",
+      "packagesPath": "C:\\Users\\geert\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\geert\\Documents\\eindwerk\\FlexDeskApplication Geert\\FlexDeskApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kevin Andries\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\geert\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13230,8 +13230,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj": {
-              "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj"
+            "C:\\Users\\geert\\Documents\\eindwerk\\FlexDeskApplication Geert\\BusinessLogica\\BusinessLogicLayer.csproj": {
+              "projectPath": "C:\\Users\\geert\\Documents\\eindwerk\\FlexDeskApplication Geert\\BusinessLogica\\BusinessLogicLayer.csproj"
             }
           }
         }
@@ -13251,7 +13251,7 @@
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0",
+            "version": "2.0.0",
             "autoReferenced": true
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {

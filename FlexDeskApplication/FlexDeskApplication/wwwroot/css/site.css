@@ -16,6 +16,19 @@
     line-height: 1.4;
 }
 
+#myCarousel {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.carousel-control.left {
+    margin-left: -25px;
+}
+
+.carousel-control.right {
+    margin-right: -25px;
+}
+
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;

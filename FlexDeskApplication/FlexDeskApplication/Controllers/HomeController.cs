@@ -4,30 +4,48 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using FlexDeskApplication.Models;
+using MVC.ViewModels;
+using BusinessLogicLayer;
+using DataAccessLayer.Model.FlexDeskDb;
+using Microsoft.AspNetCore.Http;
 
 namespace FlexDeskApplication.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IUserBll userBll;
+
+        public HomeController( IUserBll userBll )
+        {
+            this.userBll = userBll;
+        }
+
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Login(LoginViewModel lvm)
         {
-            ViewData["Message"] = "Your application description page.";
+            User user = userBll.ShowAllUsers().First(u => u.Login == lvm.UserLogin);
 
-            return View();
+            if (user != null && user.Password == lvm.Password)
+            {
+                HttpContext.Session.SetInt32("userId", (int)user.UserId);
+                if (user.Administrator>0)
+                {
+                    HttpContext.Session.SetInt32("admin", 1);
+                }
+                return RedirectToAction("Index", "Reservation", new ReservationViewModel());
+            }
+            else
+            {
+                TempData["Message"] = "Login Mislukt";
+                return RedirectToAction("Index", "Home", user);
+                //return View();
+            }
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
 
         public IActionResult Error()
         {

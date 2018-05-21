@@ -1,0 +1,68 @@
+﻿@model DataAccessLayer.Model.FlexDeskDb.Building
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Building</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BuildingId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Street)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Street)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ZipCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ZipCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BuildingCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Svg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Svg)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BuildingId }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+<a href="~/Views/Building/Details.cshtml">~/Views/Building/Details.cshtml</a>

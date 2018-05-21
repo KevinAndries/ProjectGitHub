@@ -1,0 +1,100 @@
+﻿
+@model MVC.ViewModels.ReservationViewModel
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-controller="Reservation" asp-action="Index" method="post">
+    @if (Model.ActiveUser.Administrator == 1)
+    {
+        <label for="lblUserId" width="50">User</label> <input asp-for="LoginUser"  /><br />
+    }
+    else
+    {
+        <label for="lblUserId" width="50" style="display:none">User</label> <input asp-for="LoginUser" style="display:none" /><br />
+    }
+    <label for="lblStartdate" width="50">Begindatum</label><input asp-for="Start" type="date" /><br />
+    <label for="lblEndDate" width="50">Einddatum</label><input asp-for="End" type="date" /><br />
+    <input type="submit" value="Vind desks" />
+</form>
+
+@if (Model.Floors!=null && Model.Start!=null && Model.End!=null)
+{
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+        <div class="carousel-inner" role="listbox">
+            @for (int i = 0; i < Model.Floors.Count(); i++)
+            {
+                string strClass;
+                string svg = Model.Floors.ElementAt(i).Svg;
+                @if (Model.Floors.ElementAt(i).FloorId == Model.User.Department.FloorId)
+                {
+                    strClass = "item active";
+                }
+                else
+                {
+                    strClass = "item";
+                }
+                <div class="@strClass">
+                    <p>@Model.Floors.ElementAt(i).Name</p>
+                    <svg height="500" width="500">
+                        <g>
+                            @foreach (var dep in Model.Floors.ElementAt(i).Department)
+                            {
+                                foreach (var desk in dep.FlexDesk)
+                                {
+                                    var res = Model.Reservations.FirstOrDefault(r => r.FlexDeskId == desk.FlexDeskId);
+                                    if (res==null)
+                                    {
+                                        if (Model.Reservations.Any(r => r.UserId == Model.UserId))
+                                        {
+                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" " );
+                                        }
+                                        else
+                                        {
+                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\"" + " onclick=\"location.href = '" + @Url.Action("MakeReservation", "Reservation", new { flexDesk = desk.FlexDeskId, start = Model.Start, end = Model.End, user = Model.UserId }) + "'\"");
+                                        }
+
+                                    }
+                                    else
+                                    {
+                                        if (res.UserId==Model.UserId)
+                                        {
+                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" fill=\"green\"" + " onclick =\"location.href = '" + @Url.Action("EditReservation", "Reservation", new { reservationId = Model.Reservations.FirstOrDefault(r => r.FlexDeskId == desk.FlexDeskId).ReservationId }) + "'\"");
+
+                                        }
+                                        else
+                                        {
+                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" fill=\"red\" ");
+                                        }
+
+                                    }
+
+                                }
+                            }
+                            @Html.Raw(svg)
+
+                        </g>
+                    </svg>
+                </div>
+            }
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+    </a>
+
+
+}
+
+
+
+
+
+

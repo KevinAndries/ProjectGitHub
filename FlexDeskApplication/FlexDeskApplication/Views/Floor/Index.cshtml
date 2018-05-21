@@ -1,0 +1,60 @@
+﻿@model IEnumerable<DataAccessLayer.Model.FlexDeskDb.Floor>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FloorId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Number)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FloorCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BuildingId)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FloorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FloorCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BuildingId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.FloorId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.FloorId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.FloorId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
