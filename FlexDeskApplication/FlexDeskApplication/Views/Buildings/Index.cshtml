@@ -1,0 +1,17 @@
+﻿@model MVC.Models.BuildingIndexViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Buildings/Index.cshtml";
+}
+
+<h2>View</h2>
+
+<ol>
+    @foreach (var g in Model.building)
+    {
+        <li>@g.Name (@g.BuildingCode)</li>
+
+    }
+</ol>
+

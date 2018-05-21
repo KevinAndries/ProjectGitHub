@@ -1,0 +1,8 @@
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogicaLayer.deps.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogicaLayer.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogicaLayer.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicaLayer.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicaLayer.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicaLayer.AssemblyInfo.cs
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicaLayer.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicaLayer.pdb

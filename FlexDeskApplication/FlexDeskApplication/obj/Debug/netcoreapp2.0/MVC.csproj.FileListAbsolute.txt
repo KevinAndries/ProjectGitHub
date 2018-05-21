@@ -1,0 +1,153 @@
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb

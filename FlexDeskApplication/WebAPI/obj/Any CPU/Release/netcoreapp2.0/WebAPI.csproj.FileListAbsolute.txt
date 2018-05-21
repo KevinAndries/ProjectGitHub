@@ -1,0 +1,34 @@
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.xml
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.xml
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\WebAPI.xml
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Any CPU\Release\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.xml
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Any CPU\Release\netcoreapp2.0\WebAPI.pdb

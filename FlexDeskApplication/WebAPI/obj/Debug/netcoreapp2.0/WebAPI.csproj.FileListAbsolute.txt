@@ -1,0 +1,218 @@
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180317\FlexDeskApplication 20180317\FlexDeskApplication 20180311\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180318\FlexDeskApplication 20180318\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDesksDB 20180318\FlexDesksDB 20180320\FlexDeskApplication 20180320\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180325\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180401\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\andri\OneDrive\Desktop\FlexDeskApplication 20180417\FlexDeskApplication 20180417\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180418\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180419\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180422\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.xml
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.runtimeconfig.dev.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
