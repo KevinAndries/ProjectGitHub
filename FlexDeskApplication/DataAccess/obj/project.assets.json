@@ -3400,11 +3400,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\DataAccess\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\DataAccess\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\DataAccess\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\DataAccess\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Kevin Andries\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -3419,11 +3419,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\BusinessLogicLayer.csproj",
       "projectName": "BusinessLogicLayer",
-      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj",
+      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\BusinessLogicLayer.csproj",
       "packagesPath": "C:\\Users\\Kevin Andries\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\obj\\",
+      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3442,8 +3442,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\DataAccess\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\DataAccess\\DataAccessLayer.csproj"
+            "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\DataAccess\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\DataAccess\\DataAccessLayer.csproj"
             }
           }
         }

@@ -13297,11 +13297,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\Kevin Andries\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13320,8 +13320,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj": {
-              "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj"
+            "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\BusinessLogicLayer.csproj": {
+              "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\BusinessLogicLayer.csproj"
             }
           }
         }
