@@ -1,0 +1,146 @@
+﻿
+@model MVC.ViewModels.ReservationViewModel
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.ActiveUser.Administrator == 1)
+{
+    <div class="dataNok">@ViewData["message2"]</div>
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Index">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserCode" class="control-label">UserCode</label>
+                    <input asp-for="UserCode" class="form-control" />
+                    <span asp-validation-for="UserCode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Change User" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">                
+                <label asp-for="UserId" class="control-label" style="display:none"></label>
+                <input asp-for="UserId" class="form-control" style="display:none" />                
+                <span asp-validation-for="UserCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Start" class="control-label">@Model.Dictionary.Label2</label>
+                <input asp-for="Start" class="form-control" type="date" />
+                <span asp-validation-for="Start" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="End" class="control-label">@Model.Dictionary.Label3</label>
+                <input asp-for="End" class="form-control" type="date" />
+                <span asp-validation-for="End" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="@Model.Dictionary.Label1 @Model.User.FirstName @Model.User.Name" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model.Floors != null && Model.Start != null && Model.End != null)
+{
+
+    <div>
+        <a asp-action="Index">@Model.Dictionary.Label18</a>
+    </div>
+
+    <h3>@Model.Dictionary.Label13 @Model.User.FirstName @Model.User.Name @Model.Dictionary.Label14 @Model.Start.ToString().Replace(" 0:00:00","") @Model.Dictionary.Label15 @Model.End.ToString().Replace(" 0:00:00", ""):</h3>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+        <div class="carousel-inner" role="listbox">
+            @for (int i = 0; i < Model.Floors.Count(); i++)
+            {
+                string strClass;
+                string svg = Model.Floors.ElementAt(i).Svg;
+                @if (Model.Floors.ElementAt(i).FloorId == Model.User.Department.FloorId)
+                {
+                    strClass = "item active";
+                }
+                else
+                {
+                    strClass = "item";
+                }
+                <div class="@strClass" style="border:1px solid black">
+                    <p style="font-weight:bold" align="center">Building: @Model.Building.Name.ToUpper()</p>
+                    <p style="font-weight:bold" align="center">Floor: @Model.Floors.ElementAt(i).Name.ToUpper()</p>
+                    <svg height="1000" width="1000">
+                        <g>
+                            @foreach (var dep in Model.Floors.ElementAt(i).Department)
+                            {
+                                foreach (var desk in dep.FlexDesk)
+                                {
+                                    if (Model.DefaultDesks.Contains((int?)desk.FlexDeskId))
+                                    {
+                                        svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" fill=\"red\" ");
+                                    }
+                                    else
+                                    {
+                                        var res = Model.Reservations.FirstOrDefault(r => r.FlexDeskId == desk.FlexDeskId);
+
+                                        if (res == null)
+                                        {
+                                            if (Model.Reservations.Any(r => r.UserId == Model.UserId))
+                                            {
+                                                svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" ");
+                                            }
+                                            else
+                                            {
+                                                svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\"" + " onclick=\"location.href = '" + @Url.Action("MakeReservation", "Reservation", new { flexDesk = desk.FlexDeskId, start = Model.Start, end = Model.End, user = Model.UserId }) + "'\"");
+                                            }
+
+                                        }
+                                        else
+                                        {
+                                            if (res.UserId == Model.UserId)
+                                            {
+                                                svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" fill=\"green\"" + " onclick =\"location.href = '" + @Url.Action("Delete", "Reservation", new { id = Model.Reservations.FirstOrDefault(r => r.FlexDeskId == desk.FlexDeskId).ReservationId }) + "'\"");
+
+                                            }
+                                            else
+                                            {
+                                                svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" fill=\"red\" ");
+                                            }
+
+                                        }
+                                    }
+
+                                }
+                            }
+                            @Html.Raw(svg)
+
+                        </g>
+                    </svg>
+                </div>
+            }
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" title="test">
+        Links
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">-</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" >+</span>
+    </a>
+}
+else
+{
+    <div class="dataNok">@ViewData["message"]</div>
+}
+
+

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DataAccessLayer.Model.FlexDeskDb.Department>
+﻿@model MVC.ViewModels.DepartmentViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -29,7 +29,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Departments) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.DepartmentId)
@@ -44,11 +44,15 @@
                 @Html.DisplayFor(modelItem => item.FloorId)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new { id = item.DepartmentId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.DepartmentId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.DepartmentId }) |
+                @Html.ActionLink("FlexDesks", "Index", "Flexdesk", new { departmentId = item.DepartmentId, buildingId=Model.BuildingId, floorId=Model.FloorId }) |
+                @Html.ActionLink("Users", "Index", "User", new { departmentId = item.DepartmentId, buildingId = Model.BuildingId, floorId = Model.FloorId })
             </td>
         </tr>
 }
     </tbody>
 </table>
+
+@Html.ActionLink("Back to Floors", "Index", "Floor", new { id = Model.BuildingId })

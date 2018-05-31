@@ -45,7 +45,10 @@
     </dl>
     
     <form asp-action="Delete">
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn btn-default" />
     </form>
+</div>
+<div>
+    @Html.ActionLink("Departments of this Floor", "Index", new { floorId = Model.FloorId }) |
+    @Html.ActionLink("All departments", "Index")
 </div>

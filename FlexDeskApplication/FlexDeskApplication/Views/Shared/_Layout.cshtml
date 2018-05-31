@@ -5,16 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - FlexDesk </title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+ 
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,32 +19,62 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FlexDeskFE</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FlexDesk</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Reservation" asp-action="Index">Reservation</a></li>
-                    <li><a asp-area="" asp-controller="Absence" asp-action="Index">Absence</a></li>
                     @{
-                        bool admin = true;
-                        if (admin)
+                        if (((int?[])ViewData["sessionData"])[1] == 1) //1=FR
                         {
-                            <li><a asp-area="" asp-controller="Building" asp-action="Index">Building</a></li>
-                            <li><a asp-area="" asp-controller="Floor" asp-action="Index">Floor</a></li>
-                            <li><a asp-area="" asp-controller="Department" asp-action="Index">Department</a></li>
-                            <li><a asp-area="" asp-controller="FlexDesk" asp-action="Index">FlexDesk</a></li>
+                            <li><a asp-area="" asp-controller="Reservation" asp-action="Index">Réservation</a></li>
+                            <li><a asp-area="" asp-controller="Absence" asp-action="Index">Absence</a></li>
                         }
+                        else
+                        {
+                            <li><a asp-area="" asp-controller="Reservation" asp-action="Index">Reservatie</a></li>
+                            <li><a asp-area="" asp-controller="Absence" asp-action="Index">Afwezigheid</a></li>
+                        }
+
+                        if (((int?[])ViewData["sessionData"])[0] != null)
+                        {
+                            if (((int?[])ViewData["sessionData"])[0] > 0)
+                            {
+                                <li><a asp-area="" asp-controller="Building" asp-action="Index">Building</a></li>
+                                <li><a asp-area="" asp-controller="Floor" asp-action="Index">Floor</a></li>
+                                <li><a asp-area="" asp-controller="Department" asp-action="Index">Department</a></li>
+                                <li><a asp-area="" asp-controller="FlexDesk" asp-action="Index">FlexDesk</a></li>
+                                <li><a asp-area="" asp-controller="User" asp-action="Index">User</a></li>
+                            }
+                        }
+
                     }
                     
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    @{
+                        if (((int?[])ViewData["sessionData"])[1] == 1) //1 = FR
+                        {
+                            <li align="right"><a asp-area="" asp-controller="Home" asp-action="Language">NL</a></li>
+                            <li align="right"><a asp-area="" asp-controller="Home" asp-action="LogOut">Déconnecter</a></li>
+                        }
+                        else
+                        {
+                            <li><a asp-area="" asp-controller="Home" asp-action="Language">FR</a></li>
+                            <li align="right"><a asp-area="" asp-controller="Home" asp-action="LogOut">Uitloggen</a></li>
+                        }
+
+                    }
                 </ul>
             </div>
         </div>
     </nav>
+    <br />
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - FlexDeskFE</p>
+            <p>&copy; 2018 - FlexDeskApplication</p>
         </footer>
     </div>
 

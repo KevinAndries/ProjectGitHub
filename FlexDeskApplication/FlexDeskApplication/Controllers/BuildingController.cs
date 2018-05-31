@@ -26,18 +26,21 @@ namespace MVC.Controllers
         // GET: Building
         public ActionResult Index()
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View(buildingBll.ShowAllBuildings());
         }
 
         // GET: Building/Details/5
         public ActionResult Details(int id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View(buildingBll.GetBuildingById(id));
         }
 
         // GET: Building/Create
         public ActionResult Create()
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View();
         }
 
@@ -60,10 +63,10 @@ namespace MVC.Controllers
                         Number = bvm.Number,
                         ZipCode = bvm.ZipCode
                     };
+
                     buildingBll.CreateBuilding(building);
-                    long buildingId = buildingBll.ShowAllBuildings().FirstOrDefault(b => b.Name == building.Name).BuildingId;
-                    
-                    
+                    long buildingId = buildingBll.ShowAllBuildings().FirstOrDefault(b => b.BuildingCode == building.BuildingCode).BuildingId;
+                                        
                     for (int i = 0; i < bvm.NumberOfFloors; i++)
                     {
                         Floor floor = new Floor();
@@ -74,10 +77,12 @@ namespace MVC.Controllers
                         floorBll.CreateFloor(floor);
                     }
 
+                    ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
                     return RedirectToAction(nameof(Index));
                  }
                 else
                 {
+                    ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
                     return View();
                 }
              }
@@ -92,6 +97,7 @@ namespace MVC.Controllers
         // GET: Building/Edit/5
         public ActionResult Edit(int id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View(buildingBll.GetBuildingById(id));
         }
 
@@ -107,6 +113,7 @@ namespace MVC.Controllers
                 {
                     buildingBll.UpdateBuilding(id, building);
                 }
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -118,6 +125,7 @@ namespace MVC.Controllers
         // GET: Building/Delete/5
         public ActionResult Delete(int id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View(buildingBll.GetBuildingById(id));
         }
 
@@ -129,7 +137,8 @@ namespace MVC.Controllers
             try
             {
                 DeleteBuilding(id);
-               
+
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -150,11 +159,6 @@ namespace MVC.Controllers
                 buildingBll.DeleteBuilding(id);
             }
         }  
-
-        public IActionResult Floors(long id)
-        {
-            return RedirectToAction("Index", "Floor", new { id = id });
-        }
 
     }
 } 

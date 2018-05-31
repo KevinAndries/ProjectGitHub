@@ -1,0 +1,37 @@
+﻿@model MVC.ViewModels.AbsenceViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>@Model.Dictionary.Label16</h3>
+<div>    
+    <h4>@Model.Dictionary.Label17</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Model.Dictionary.Label2
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt>
+            @Model.Dictionary.Label3
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+        <dt>
+            @Model.Dictionary.Label10
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="@Model.Dictionary.Label5" class="btn btn-default" /> |
+        <a asp-action="Index">@Model.Dictionary.Label18</a>
+    </form>
+</div>

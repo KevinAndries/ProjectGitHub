@@ -29,8 +29,8 @@ namespace FlexDeskApplication
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<FlexDesksDbEntities>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("FlexDeskConnection")));
+            //services.AddDbContext<FlexDesksDbEntities>(options =>
+            //  options.UseSqlServer(Configuration.GetConnectionString("FlexDeskConnection")));
 
             //services.AddDbContext<FlexDesksDbEntities>(options =>
             //    options.UseInMemoryDatabase()
@@ -49,8 +49,8 @@ namespace FlexDeskApplication
                 .AddJsonFile("appsettings.json");
             var config = builder.Build();
 
-            //var connectionString = config["ConnectionStrings:FlexDeskConnection"];
-            var connectionString = config["ConnectionStrings:localFlexDeskConnection"];
+            var connectionString = config["ConnectionStrings:FlexDeskConnection"];
+            //var connectionString = config["ConnectionStrings:localFlexDeskConnection"];
 
 
 

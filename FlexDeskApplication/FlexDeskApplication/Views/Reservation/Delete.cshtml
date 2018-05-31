@@ -1,0 +1,59 @@
+﻿
+@model MVC.ViewModels.ReservationViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <h4>@ViewData["Title"]</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Model.Dictionary.Label2
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.StartDate)
+        </dd>
+        <dt>
+            @Model.Dictionary.Label3
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.EndDate)
+        </dd>
+        <dt>
+            @Model.Dictionary.Label26
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.NameCreator)
+        </dd>
+        <dt>
+            @Model.Dictionary.Label27
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReservationUser.CreationDate)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="submit" value="@Model.Dictionary.Label5" class="btn btn-default" /> |
+        <a asp-action="Index">@Model.Dictionary.Label18</a>
+    </form>
+</div>
+
+
+<div style="border:1px solid black">
+    <p align="center">@Model.Building.Name.ToUpper(): @Model.ReservationFloor.Name.ToUpper()</p>
+    <svg height="500" width="1000">
+        @Html.Raw(Model.ReservationFloor.Svg.Replace("id=\"desk" + Model.ReservationUser.FlexDeskId + "\"", "id=\"" + Model.ReservationUser.FlexDeskId + "\" fill=\"green\" "))
+    </svg>
+
+</div>
+
+
+
+
+
+
+

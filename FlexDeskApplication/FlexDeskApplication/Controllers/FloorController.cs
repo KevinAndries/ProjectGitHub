@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BusinessLogicLayer;
 using DataAccessLayer.Model.FlexDeskDb;
+using MVC.ViewModels;
 
 namespace MVC.Controllers
 {
@@ -24,13 +25,15 @@ namespace MVC.Controllers
         // GET: Floor
         public ActionResult Index(long id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
+
             if (id == 0)
             {
-                return View(floorBll.ShowAllFloors());
+                return View(new FloorViewModel { Floors = floorBll.ShowAllFloors() });
             }
             else
             {
-                return View(floorBll.ShowAllFloors().Where(f => f.BuildingId==id));
+                return View(new FloorViewModel { Floors = floorBll.ShowAllFloors().Where(f => f.BuildingId == id), BuildingId = id });
             }
             
         }
@@ -38,14 +41,15 @@ namespace MVC.Controllers
         // GET: Floor/Details/5
         public ActionResult Details(int id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View(floorBll.GetFloorById(id));
         }
 
         // GET: Floor/Create
-        public ActionResult Create()
+        public ActionResult Create(long buildingId)
         {
-
-            return View();
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
+            return View(new Floor { BuildingId=buildingId });
         }
 
         // POST: Floor/Create
@@ -56,6 +60,8 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
+
                 if (activeUser.Administrator > 0)
                 {
                     floorBll.CreateFloor(floor);
@@ -72,6 +78,7 @@ namespace MVC.Controllers
         // GET: Floor/Edit/5
         public ActionResult Edit(int id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View(floorBll.GetFloorById(id));
         }
 
@@ -83,6 +90,8 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
+
                 if (activeUser.Administrator > 0)
                 {
                     floorBll.UpdateFloor(id, floor);
@@ -99,6 +108,7 @@ namespace MVC.Controllers
         // GET: Floor/Delete/5
         public ActionResult Delete(int id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
             return View(floorBll.GetFloorById(id));
         }
 
@@ -110,6 +120,8 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
+
                 if (activeUser.Administrator > 0)
                 {
                     floorBll.DeleteFloor(id);

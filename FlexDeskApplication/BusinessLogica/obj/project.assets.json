@@ -3410,26 +3410,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kevin Andries\\.nuget\\packages\\": {},
+    "C:\\Users\\andri\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\andri\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\BusinessLogicLayer.csproj",
       "projectName": "BusinessLogicLayer",
-      "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\BusinessLogicLayer.csproj",
-      "packagesPath": "C:\\Users\\Kevin Andries\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\BusinessLogica\\obj\\",
+      "projectPath": "C:\\Users\\andri\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\BusinessLogicLayer.csproj",
+      "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andri\\Desktop\\ProjectGitHub\\FlexDeskApplication\\BusinessLogica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kevin Andries\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3442,8 +3439,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\DataAccess\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Kevin Andries\\Desktop\\FlexDeskApplication 20180520\\DataAccess\\DataAccessLayer.csproj"
+            "C:\\Users\\andri\\Desktop\\ProjectGitHub\\FlexDeskApplication\\DataAccess\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\andri\\Desktop\\ProjectGitHub\\FlexDeskApplication\\DataAccess\\DataAccessLayer.csproj"
             }
           }
         }
@@ -3457,15 +3454,15 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.1"
           }
         },
         "imports": [

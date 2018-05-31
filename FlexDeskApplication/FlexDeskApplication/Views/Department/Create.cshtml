@@ -1,4 +1,4 @@
-﻿@model DataAccessLayer.Model.FlexDeskDb.Department
+﻿@model MVC.ViewModels.DepartmentViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -13,11 +13,6 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="DepartmentId" class="control-label"></label>
-                <input asp-for="DepartmentId" class="form-control" />
-                <span asp-validation-for="DepartmentId" class="text-danger"></span>
-            </div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
@@ -39,6 +34,11 @@
                 <span asp-validation-for="FloorId" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="NumberOfDesks" class="control-label"></label>
+                <input asp-for="NumberOfDesks" class="form-control" />
+                <span asp-validation-for="NumberOfDesks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </form>
@@ -46,6 +46,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    @Html.ActionLink("Departments of this Floor", "Index", new { floorId = Model.FloorId }) |
+    @Html.ActionLink("All departments", "Index")
 </div>
 
