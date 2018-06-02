@@ -180,3 +180,4 @@ C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplica
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csproj.CopyComplete
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.dll
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.pdb
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Debug\netcoreapp2.0\MVC.csprojAssemblyReference.cache
