@@ -8,7 +8,7 @@
 
 @if (Model.ActiveUser.Administrator == 1)
 {
-    <div class="dataNok">@ViewData["message2"]</div>
+    <div class="data-nok">@ViewData["message2"]</div>
     <div class="row">
         <div class="col-md-4">
             <form asp-action="Index">
@@ -54,7 +54,7 @@
     </div>
 </div>
 
-<div class="dataNok">@ViewData["message"]</div>
+<div class="data-nok">@ViewData["message"]</div>
 <h2>@Model.Dictionary.Label12 @Model.User.FirstName @Model.User.Name</h2>
 <table class="table">
     <thead>

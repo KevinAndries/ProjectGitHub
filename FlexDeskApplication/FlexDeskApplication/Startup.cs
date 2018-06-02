@@ -49,8 +49,8 @@ namespace FlexDeskApplication
                 .AddJsonFile("appsettings.json");
             var config = builder.Build();
 
-            var connectionString = config["ConnectionStrings:FlexDeskConnection"];
-            //var connectionString = config["ConnectionStrings:localFlexDeskConnection"];
+            //var connectionString = config["ConnectionStrings:FlexDeskConnection"];
+            var connectionString = config["ConnectionStrings:localFlexDeskConnection"];
 
 
 

@@ -35,6 +35,7 @@ namespace MVC.Models
         public string Label25 { get; set; }
         public string Label26 { get; set; }
         public string Label27 { get; set; }
+        public string Label28 { get; set; }
 
         public Dictionary(int? language)
         {
@@ -67,6 +68,7 @@ namespace MVC.Models
                 Label25 = "U heeft al een reservatie.";
                 Label26 = "Aangemaakt door";
                 Label27 = "Datum aanmaak";
+                Label28 = "Nieuwe reservatie aangemaakt";
             }
             else
             {
@@ -97,6 +99,7 @@ namespace MVC.Models
                 Label25 = "Vous avez déjà une réservation";
                 Label26 = "Créé par";
                 Label27 = "Date de création";
+                Label28 = "Nouvelle réservation créée";
             }
         }
     }

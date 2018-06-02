@@ -57,8 +57,6 @@ namespace MVC.ViewModels
         public bool DatesOK { get; set; }
         public string Message{ get; set; }
 
-
-
         private string AddQuotes(string svg)
         {
             string svg2 = "";

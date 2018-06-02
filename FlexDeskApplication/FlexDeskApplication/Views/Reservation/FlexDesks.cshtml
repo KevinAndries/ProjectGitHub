@@ -8,7 +8,7 @@
 
 @if (Model.ActiveUser.Administrator == 1)
 {
-    <div class="dataNok">@ViewData["message2"]</div>
+    <div class="data-nok">@ViewData["message2"]</div>
     <div class="row">
         <div class="col-md-4">
             <form asp-action="Index">
@@ -29,7 +29,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Index">
+        <form asp-action="FlexDesks">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">                
                 <label asp-for="UserId" class="control-label" style="display:none"></label>
@@ -101,7 +101,7 @@
                                             }
                                             else
                                             {
-                                                svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\"" + " onclick=\"location.href = '" + @Url.Action("MakeReservation", "Reservation", new { flexDesk = desk.FlexDeskId, start = Model.Start, end = Model.End, user = Model.UserId }) + "'\"");
+                                                svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\"" + " onclick=\"location.href = '" + @Url.Action("NewReservation", "Reservation", new { flexDesk = desk.FlexDeskId, start = Model.Start, end = Model.End, user = Model.UserId }) + "'\"");
                                             }
 
                                         }
@@ -130,8 +130,7 @@
             }
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" title="test">
-        Links
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">-</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
@@ -140,7 +139,7 @@
 }
 else
 {
-    <div class="dataNok">@ViewData["message"]</div>
+    <div class="data-nok">@ViewData["message"]</div>
 }
 
 

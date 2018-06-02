@@ -7,7 +7,7 @@
 
 
 <div>
-    <h4>@ViewData["Title"]</h4>
+    <h4>@Model.Dictionary.Label28</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -35,10 +35,9 @@
             @Html.DisplayFor(model => model.ReservationUser.CreationDate)
         </dd>
     </dl>
-     <form asp-action="Delete">
-        <input type="submit" value="@Model.Dictionary.Label5" class="btn btn-default" /> |
-        <a asp-action="Index">@Model.Dictionary.Label18</a>
-    </form>
+
+    @Html.ActionLink(@Model.Dictionary.Label18, "Index", "Reservation")
+    
 </div>
 
 <br />

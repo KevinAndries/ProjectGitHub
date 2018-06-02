@@ -101,29 +101,25 @@ namespace MVC.Controllers
                     rvm.Start = DateTime.Today;
                     rvm.End = DateTime.Today;
                 }
-
-                
+                                
                 // Check if dates are ok
                 string message = rvm.CheckDates(HttpContext.Session.GetInt32("language"));
                 if (rvm.DatesOK==false)
                 {
-                    //exception: Back to List
-                    ViewData["message"] = message;
                     IEnumerable<Reservation> reservations = reservationBll.ShowAllReservations().Where(r => r.UserId == activeUser.UserId && r.EndDate >= DateTime.Today);
                     rvm.Reservations = new ReservationFE().GetReservations(flexDeskBll, reservations);
+                    //exception: Back to List
+                    ViewData["message"] = message;
                     return RedirectToAction("Index", rvm);
                 }
 
-                UpdateRvm(rvm);
-
+                UpdateRvm(rvm);                             
+                
                 if (rvm.Reservations.Any(r => r.UserId == rvm.UserId))
                 {
                     ReservationFE reservation = rvm.Reservations.First(r => r.UserId == rvm.UserId);
-                    if (((DateTime)reservation.CreationDate).AddSeconds(3) < DateTime.Now)
-                    {
-                        //Exception: User has already reservation in this period
-                        return RedirectToAction("Delete", routeValues: new { id = reservation.ReservationId, message = new Dictionary(HttpContext.Session.GetInt32("language")).Label25 });
-                    }
+                    //Exception: User has already reservation in this period
+                     return RedirectToAction("Delete", routeValues: new { id = reservation.ReservationId, message = new Dictionary(HttpContext.Session.GetInt32("language")).Label25 });
                 }                
                 
                 return View(rvm);              
@@ -131,7 +127,6 @@ namespace MVC.Controllers
             }
             catch (Exception)
             {
-
                 return RedirectToAction("Index", "Home");
             }
 
@@ -158,12 +153,12 @@ namespace MVC.Controllers
                     d.FlexDesk = flexDeskBll.ShowAllFlexdesks().Where(fd => fd.DepartmentId == d.DepartmentId).ToList();
                 }
             }
-            rvm.Reservations = new ReservationFE().GetReservations(flexDeskBll, reservationBll.ShowAllReservations().Where(r => (r.StartDate >= rvm.Start && r.StartDate <= rvm.End) || (r.EndDate >= rvm.Start && r.EndDate <= rvm.End)));
+            rvm.Reservations = new ReservationFE().GetReservations(flexDeskBll, reservationBll.ShowAllReservations().Where(r => ((r.StartDate >= rvm.Start && r.StartDate <= rvm.End) || (r.EndDate >= rvm.Start && r.EndDate <= rvm.End)) || ((rvm.Start >= r.StartDate && rvm.Start <= r.EndDate) || (rvm.End >= r.StartDate && rvm.End <= r.EndDate))));
             
             rvm.DefaultDesks = DefaultDesks((DateTime)rvm.Start, (DateTime)rvm.End);
         }
 
-        public IActionResult MakeReservation(long flexDesk, DateTime start, DateTime end, long user)
+        public IActionResult NewReservation(long flexDesk, DateTime start, DateTime end, long user)
         {
             activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
             ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
@@ -185,12 +180,19 @@ namespace MVC.Controllers
                 rvm.UserCode = rvm.User.Login;
                 rvm.Start = res.StartDate;
                 rvm.End = res.EndDate;
-
+                rvm.ActiveUser = activeUser;
+                rvm.Dictionary = new Dictionary(HttpContext.Session.GetInt32("language"));
+                rvm.ReservationFloor = floorBll.GetFloorById(departmentBll.GetDepartmentById(flexDeskBll.GetFlexDeskById(res.FlexDeskId).DepartmentId).FloorId);
+                rvm.ReservationUser = new ReservationFE(flexDeskBll, res);
+                rvm.ReservationUser.NameCreator = activeUser.FirstName + " " + activeUser.Name;
+                UpdateRvm(rvm);
+                return View(rvm);
             }
-
-            rvm.ActiveUser = activeUser;
-            rvm.Dictionary = new Dictionary(HttpContext.Session.GetInt32("language"));
-            return RedirectToAction("FlexDesks", rvm);
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            
 
         }
        
@@ -206,8 +208,10 @@ namespace MVC.Controllers
             rvm.User = userBll.GetUserById(res.UserId);
             rvm.UserCode = rvm.User.Login;
             rvm.ReservationFloor = floorBll.GetFloorById(departmentBll.GetDepartmentById(flexDeskBll.GetFlexDeskById(res.FlexDeskId).DepartmentId).FloorId);
-            
-            if (message=="")
+
+            rvm.Dictionary = new Dictionary(HttpContext.Session.GetInt32("language"));
+
+            if (message==""||message==null)
             {
                 message = rvm.Dictionary.Label5 +" "+ rvm.Dictionary.Label19;
             }
@@ -215,7 +219,6 @@ namespace MVC.Controllers
 
 
             rvm.ActiveUser = activeUser;
-            rvm.Dictionary = new Dictionary(HttpContext.Session.GetInt32("language"));
             ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
 
             UpdateRvm(rvm);

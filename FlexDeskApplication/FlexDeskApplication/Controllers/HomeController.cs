@@ -58,7 +58,7 @@ namespace FlexDeskApplication.Controllers
                     {
                         HttpContext.Session.SetInt32("admin", 1);
                     }
-                    return RedirectToAction("Index", "Reservation", new ReservationViewModel());
+                    return RedirectToAction("Index", "Reservation", new ReservationViewModel { UserId = user.UserId, UserCode = user.Login });
                 }
                 else
                 {
