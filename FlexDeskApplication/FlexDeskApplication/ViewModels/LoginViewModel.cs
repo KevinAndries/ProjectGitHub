@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace MVC.ViewModels
         public string UserLogin { get; set; }
         [DataType(DataType.Password)]
         public String Password { get; set; }
+        public Dictionary Dictionary { get; set; }
     }
 }

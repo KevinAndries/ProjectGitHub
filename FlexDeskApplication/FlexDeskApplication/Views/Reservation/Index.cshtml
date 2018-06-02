@@ -6,95 +6,91 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<form asp-controller="Reservation" asp-action="Index" method="post">
-    @if (Model.ActiveUser.Administrator == 1)
-    {
-        <label for="lblUserId" width="50">User</label> <input asp-for="LoginUser"  /><br />
-    }
-    else
-    {
-        <label for="lblUserId" width="50" style="display:none">User</label> <input asp-for="LoginUser" style="display:none" /><br />
-    }
-    <label for="lblStartdate" width="50">Begindatum</label><input asp-for="Start" type="date" /><br />
-    <label for="lblEndDate" width="50">Einddatum</label><input asp-for="End" type="date" /><br />
-    <input type="submit" value="Vind desks" />
-</form>
-
-@if (Model.Floors!=null && Model.Start!=null && Model.End!=null)
+@if (Model.ActiveUser.Administrator == 1)
 {
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-        <div class="carousel-inner" role="listbox">
-            @for (int i = 0; i < Model.Floors.Count(); i++)
-            {
-                string strClass;
-                string svg = Model.Floors.ElementAt(i).Svg;
-                @if (Model.Floors.ElementAt(i).FloorId == Model.User.Department.FloorId)
-                {
-                    strClass = "item active";
-                }
-                else
-                {
-                    strClass = "item";
-                }
-                <div class="@strClass">
-                    <p>@Model.Floors.ElementAt(i).Name</p>
-                    <svg height="500" width="500">
-                        <g>
-                            @foreach (var dep in Model.Floors.ElementAt(i).Department)
-                            {
-                                foreach (var desk in dep.FlexDesk)
-                                {
-                                    var res = Model.Reservations.FirstOrDefault(r => r.FlexDeskId == desk.FlexDeskId);
-                                    if (res==null)
-                                    {
-                                        if (Model.Reservations.Any(r => r.UserId == Model.UserId))
-                                        {
-                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" " );
-                                        }
-                                        else
-                                        {
-                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\"" + " onclick=\"location.href = '" + @Url.Action("MakeReservation", "Reservation", new { flexDesk = desk.FlexDeskId, start = Model.Start, end = Model.End, user = Model.UserId }) + "'\"");
-                                        }
-
-                                    }
-                                    else
-                                    {
-                                        if (res.UserId==Model.UserId)
-                                        {
-                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" fill=\"green\"" + " onclick =\"location.href = '" + @Url.Action("EditReservation", "Reservation", new { reservationId = Model.Reservations.FirstOrDefault(r => r.FlexDeskId == desk.FlexDeskId).ReservationId }) + "'\"");
-
-                                        }
-                                        else
-                                        {
-                                            svg = svg.Replace("id=\"desk" + desk.FlexDeskId + "\"", "id=\"" + desk.FlexDeskId + "\" fill=\"red\" ");
-                                        }
-
-                                    }
-
-                                }
-                            }
-                            @Html.Raw(svg)
-
-                        </g>
-                    </svg>
+    <div class="data-nok">@ViewData["message2"]</div>
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Index">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserCode" class="control-label">UserCode</label>
+                    <input asp-for="UserCode" class="form-control" />
+                    <span asp-validation-for="UserCode" class="text-danger"></span>
                 </div>
-            }
+
+                <div class="form-group">
+                    <input type="submit" value="Change User" class="btn btn-default" />
+                </div>
+            </form>
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-    </a>
-
-
 }
 
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="FlexDesks">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">                
+                <label asp-for="UserId" class="control-label" style="display:none"></label>
+                <input asp-for="UserId" class="form-control" style="display:none" />                
+                <span asp-validation-for="UserCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Start" class="control-label">@Model.Dictionary.Label2</label>
+                <input asp-for="Start" class="form-control" type="date" />
+                <span asp-validation-for="Start" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="End" class="control-label">@Model.Dictionary.Label3</label>
+                <input asp-for="End" class="form-control" type="date" />
+                <span asp-validation-for="End" class="text-danger"></span>
+            </div>
 
+            <div class="form-group">
+                <input type="submit" value="@Model.Dictionary.Label1 @Model.User.FirstName @Model.User.Name" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
 
+<div class="data-nok">@ViewData["message"]</div>
+<h2>@Model.Dictionary.Label12 @Model.User.FirstName @Model.User.Name</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Model.Dictionary.Label2
+            </th>
+            <th>
+                @Model.Dictionary.Label3
+            </th>
+            <th>
+                FlexDeskCode
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Reservations)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FlexDesk.FlexDeskCode)
+                </td>
+                <td >
+                    @Html.ActionLink(@Model.Dictionary.Label5, "Delete", new { id = item.ReservationId }) 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
 
 
 

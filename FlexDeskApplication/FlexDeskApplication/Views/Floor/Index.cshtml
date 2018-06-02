@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DataAccessLayer.Model.FlexDeskDb.Floor>
+﻿@model MVC.ViewModels.FloorViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -8,7 +8,7 @@
 <h2>Index</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @Html.ActionLink("Create New", "Create", "Department", new { id = Model.BuildingId })
 </p>
 <table class="table">
     <thead>
@@ -32,7 +32,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Floors) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.FloorId)
@@ -52,9 +52,13 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.FloorId }) |
                 @Html.ActionLink("Details", "Details", new { id = item.FloorId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.FloorId })
+                @Html.ActionLink("Delete", "Delete", new { id = item.FloorId }) |
+                @Html.ActionLink("Departments", "Index", "Department", new { fLoorId = item.FloorId, buildingId=Model.BuildingId })
             </td>
         </tr>
 }
     </tbody>
 </table>
+<div>
+    @Html.ActionLink("Back to Buildings", "Index", "Building") 
+</div>

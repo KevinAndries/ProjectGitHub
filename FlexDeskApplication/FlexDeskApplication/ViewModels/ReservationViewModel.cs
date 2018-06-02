@@ -28,15 +28,17 @@ namespace MVC.ViewModels
         }
         public User User { get; set; }
         public User ActiveUser { get; set; }
-        public IEnumerable<Reservation> Reservations { get; set; }
+        public IEnumerable<ReservationFE> Reservations { get; set; }
 
         public long UserId { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime? Start { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime? End { get; set;}
-        public string LoginUser { get; set; }
+        public string UserCode { get; set; }
 
         public long ReservationId { get; set; }
-        public Reservation ReservationUser { get; set; }
+        public ReservationFE ReservationUser { get; set; }
         public Floor ReservationFloor {
             get
             {
@@ -48,8 +50,13 @@ namespace MVC.ViewModels
                 floor.Svg = AddQuotes(floor.Svg);
             }
         }
-  
-        
+        public Dictionary Dictionary { get; set; }
+
+        public List<int?> DefaultDesks { get; set; }
+
+        public bool DatesOK { get; set; }
+        public string Message{ get; set; }
+
         private string AddQuotes(string svg)
         {
             string svg2 = "";
@@ -57,38 +64,46 @@ namespace MVC.ViewModels
 
             if (!svg.Contains('"'))
             {
-                foreach (char c in svg)
+                if (svg.Contains("'"))
                 {
-                    switch (c)
+                    svg2 = AddQuotes(svg.Replace("'", ""));
+                }
+                else
+                {
+                    foreach (char c in svg)
                     {
-                        case '=':
-                            svg2 = svg2 + c + '"';
-                            newString = true;
-                            break;
-                        case ',':
-                            if (newString)
-                            {
-                                svg2 = svg2 + '"' + ' ';
-                                newString = false;
-                            }
-                            else
-                            {
+                        switch (c)
+                        {
+                            case '=':
+                                svg2 = svg2 + c + '"';
+                                newString = true;
+                                break;
+                            case ',':
+                                if (newString)
+                                {
+                                    svg2 = svg2 + '"' + ' ';
+                                    newString = false;
+                                }
+                                else
+                                {
+                                    svg2 += c;
+                                }
+                                break;
+                            case ' ':
+                            case '/':
+                            case '>':
+                                if (newString)
+                                {
+                                    svg2 += '"';
+                                    newString = false;
+                                }
                                 svg2 += c;
-                            }
-                            break;
-                        case ' ':
-                        case '/':
-                        case '>':
-                            if (newString)
-                            {
-                                svg2 += '"';
-                                newString = false;
-                            }
-                            svg2 += c;
-                            break;
-                        default:
-                            svg2 += c;
-                            break;
+                                break;
+                            default:
+                                svg2 += c;
+                                break;
+                        }
+
                     }
 
                 }
@@ -101,6 +116,36 @@ namespace MVC.ViewModels
             return svg2;
         }
 
-        
+        public string CheckDates(int? language)
+        {
+            DatesOK = true;
+
+            if (Start == null || End == null)
+            {
+                Start = DateTime.Today;
+                End = DateTime.Today;
+            }
+
+            if (End < Start)
+            {
+                DatesOK = false;
+                return new Dictionary(language).Label22;
+            }
+
+            if (((DateTime)Start).AddDays(6) < End)
+            {
+                DatesOK = false;
+                return new Dictionary(language).Label23;
+            }
+
+            if (DateTime.Today.AddMonths(1)<End)
+            {
+                DatesOK = false;
+                return new Dictionary(language).Label24 + DateTime.Today.Date.AddMonths(1).ToShortDateString();
+            }
+
+            return "";
+        }
+
     }
 }

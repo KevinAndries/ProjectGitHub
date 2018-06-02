@@ -4,21 +4,42 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using BusinessLogicLayer;
+using DataAccessLayer.Model.FlexDeskDb;
+using MVC.ViewModels;
 
 namespace MVC.Controllers
 {
     public class FlexDeskController : Controller
     {
-        // GET: FlexDesk
-        public ActionResult Index()
+        private readonly IFlexDeskBll flexDeskBll;
+        private readonly IUserBll userBll;
+        private User activeUser;
+
+        public FlexDeskController(IFlexDeskBll flexDeskBll, IUserBll userBll)
         {
-            return View();
+            this.flexDeskBll = flexDeskBll;
+            this.userBll = userBll;
+        }
+        // GET: FlexDesk
+        public ActionResult Index(long departmentId, long floorId, long buildingId)
+        {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
+
+            if (departmentId == 0)
+            {
+                return View(new FlexDeskViewModel { FlexDesks = flexDeskBll.ShowAllFlexdesks() });
+            }
+            else
+            {
+                return View(new FlexDeskViewModel { FlexDesks = flexDeskBll.ShowAllFlexdesks().Where(f => f.DepartmentId == departmentId), BuildingId = buildingId, DepartmentId = departmentId, FloorId = floorId });
+            }
         }
 
         // GET: FlexDesk/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(long id)
         {
-            return View();
+            return View(flexDeskBll.GetFlexDeskById(id));
         }
 
         // GET: FlexDesk/Create
@@ -30,13 +51,17 @@ namespace MVC.Controllers
         // POST: FlexDesk/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(FlexDesk desk)
         {
             try
             {
-                // TODO: Add insert logic here
+                activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
+                if (activeUser.Administrator > 0)
+                {
+                    flexDeskBll.CreateFlexDesk(desk);
+                }
 
-                return RedirectToAction(nameof(Index));
+                 return RedirectToAction(nameof(Index));
             }
             catch
             {
@@ -45,19 +70,24 @@ namespace MVC.Controllers
         }
 
         // GET: FlexDesk/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(long id)
         {
-            return View();
+            return View(flexDeskBll.GetFlexDeskById(id));
         }
 
         // POST: FlexDesk/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(long id, FlexDesk desk)
         {
+            flexDeskBll.UpdateFlexDesk(id, desk);
             try
             {
-                // TODO: Add update logic here
+                activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
+                if (activeUser.Administrator > 0)
+                {
+                    flexDeskBll.UpdateFlexDesk(id, desk);
+                }
 
                 return RedirectToAction(nameof(Index));
             }
@@ -70,17 +100,21 @@ namespace MVC.Controllers
         // GET: FlexDesk/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(flexDeskBll.GetFlexDeskById(id));
         }
 
         // POST: FlexDesk/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, FlexDesk desk)
         {
             try
             {
-                // TODO: Add delete logic here
+                activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
+                if (activeUser.Administrator > 0)
+                {
+                    flexDeskBll.DeleteFlexDesk(id);
+                }
 
                 return RedirectToAction(nameof(Index));
             }

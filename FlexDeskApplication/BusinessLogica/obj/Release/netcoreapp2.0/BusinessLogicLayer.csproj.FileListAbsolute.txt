@@ -97,3 +97,15 @@ C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\BusinessLogica\obj\R
 C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.AssemblyInfo.cs
 C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.dll
 C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180520\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Release\netcoreapp2.0\BusinessLogicLayer.deps.json
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Release\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Release\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Release\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Release\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Release\netcoreapp2.0\BusinessLogicLayer.pdb

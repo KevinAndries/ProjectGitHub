@@ -1,0 +1,63 @@
+﻿@model MVC.ViewModels.AbsenceViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.ActiveUser.Administrator == 1)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Index">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserCode" class="control-label">UserCode</label>
+                    <input asp-for="UserCode" class="form-control" />
+                    <span asp-validation-for="UserCode" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="@Model.Dictionary.Label8 @Model.Dictionary.Label20 user" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+}
+<div class="dataNok">@ViewData["message"]</div>
+<h2>@Model.Dictionary.Label8 @Model.Dictionary.Label14 @Model.User.FirstName @Model.User.Name</h2>
+
+@Html.ActionLink(@Model.Dictionary.Label11, "Create", "Absence", new { id=Model.UserId })
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Model.Dictionary.Label2
+                </th>
+                <th>
+                    @Model.Dictionary.Label3
+                </th>
+                <th>
+                    @Model.Dictionary.Label10
+                </th>
+            <th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Absences) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.ActionLink(@Model.Dictionary.Label5, "Delete", new { id = item.AbsenceId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

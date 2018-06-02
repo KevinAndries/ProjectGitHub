@@ -29,8 +29,8 @@ namespace FlexDeskApplication
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<FlexDesksDbEntities>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("FlexDeskConnection")));
+            //services.AddDbContext<FlexDesksDbEntities>(options =>
+            //  options.UseSqlServer(Configuration.GetConnectionString("FlexDeskConnection")));
 
             //services.AddDbContext<FlexDesksDbEntities>(options =>
             //    options.UseInMemoryDatabase()

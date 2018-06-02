@@ -226,9 +226,10 @@ C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\bin\Debu
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojAssemblyReference.cache
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfoInputs.cache
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csproj.CopyComplete
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
