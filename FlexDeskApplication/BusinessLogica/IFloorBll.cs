@@ -9,7 +9,6 @@ namespace BusinessLogicLayer
     {
         IEnumerable<Floor> ShowAllFloors();
         Floor GetFloorById(long id);
-        Floor GetFlexDesksById(long deskid);
         void CreateFloor(Floor floor);
         void UpdateFloor(long id, Floor floor);
         void DeleteFloor(long id);

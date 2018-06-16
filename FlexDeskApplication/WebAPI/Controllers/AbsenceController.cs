@@ -11,22 +11,6 @@ namespace WebAPI.Controllers
     public class AbsenceController : Controller
     {
 
-        //private readonly IAbsenceProvider absenceProvider;
-        //private readonly IAbsenceProcessor absenceProcessor;
-        //private readonly IUserProvider userProvider;
-
-        //private readonly IAbsenceBll absenceBll;
-
-
-        //public AbsenceController(IAbsenceProvider absenceProvider, IAbsenceProcessor absenceProcessor, IUserProvider userProvider, IAbsenceBll absenceBll)
-        //{
-        //    this.absenceProvider = absenceProvider;
-        //    this.absenceProcessor = absenceProcessor;
-        //    this.userProvider = userProvider;
-
-        //    this.absenceBll = absenceBll;
-
-        //}
 
             
         private readonly IAbsenceBll absenceBll;
@@ -34,10 +18,7 @@ namespace WebAPI.Controllers
 
         public AbsenceController(IAbsenceBll absenceBll)
         {
-
-
             this.absenceBll = absenceBll;
-
         }
 
 
@@ -54,12 +35,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}", Name = "AbsenceGet")]
         public Absence Get(int id)
         {
-
-            //var absence = absenceBll.GetAbsenceById(id);
-            //absence.User = userProvider.GetById(absence.UserId);
-            //return absence;
             return absenceBll.GetAbsenceById(id);
-
         }
 
         // POST api/Absence
@@ -67,8 +43,7 @@ namespace WebAPI.Controllers
         public void Post([FromBody]Absence absence)
         {
             absenceBll.CreateAbsence(absence);
-            //absence.User = userProvider.GetById(absence.UserId);
-            //absenceProcessor.Create(absence);
+
         }
 
         // PUT api/Absence/5
@@ -77,7 +52,6 @@ namespace WebAPI.Controllers
         {
             absence.AbsenceId = id;
             absenceBll.UpdateAbsence(id, absence);
-            //absenceProcessor.Update(absence);
         }
 
         // DELETE api/Absence/5

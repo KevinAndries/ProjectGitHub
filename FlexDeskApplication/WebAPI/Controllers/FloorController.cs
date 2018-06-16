@@ -52,15 +52,6 @@ namespace WebAPI.Controllers
             return floorBll.GetFloorById(id);
         }
 
-        // GET api/Floor/5
-        [HttpGet("{deskid}", Name = "DeskGet")]
-        public Floor GetDesk(long deskid)
-        {
-            //return floorProvider.GetById(id);
-            return floorBll.GetFlexDesksById(deskid);
-        }
-
-
         //Methode voor alle floors op te halen
 
         // POST api/Floor

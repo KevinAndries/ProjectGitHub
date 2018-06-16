@@ -11,16 +11,6 @@ namespace WebAPI.Controllers
     public class DepartmentController : Controller
     {
 
-        //private readonly IDepartmentProvider departmentProvider;
-        //private readonly IDepartmentProcessor departmentProcessor;
-        //private readonly IDepartmentBll departmentBll;
-
-        //public DepartmentController(IDepartmentProvider departmentProvider, IDepartmentProcessor departmentProcessor, IDepartmentBll departmentBll)
-        //{
-        //    this.departmentProvider = departmentProvider;
-        //    this.departmentProcessor = departmentProcessor;
-        //    this.departmentBll = departmentBll;
-        //}
 
 
         private readonly IDepartmentBll departmentBll;
@@ -46,7 +36,6 @@ namespace WebAPI.Controllers
         [HttpGet("{id}", Name = "DeartmentGet")]
         public Department Get(long id)
         {
-            //return departmentProvider.GetById(id);
             return departmentBll.GetDepartmentById(id);
         }
 
@@ -54,7 +43,6 @@ namespace WebAPI.Controllers
         [HttpPost]
         public void Post([FromBody]Department department)
         {
-            //departmentProcessor.Create(department);
             departmentBll.CreateDepartment(department);
 
         }
@@ -65,8 +53,6 @@ namespace WebAPI.Controllers
         {
             department.DepartmentId = id;
             departmentBll.UpdateDepartment(id, department);
-            //departmentProcessor.Update(department);
-            //return department;
         }
 
         // DELETE api/Department/5
@@ -74,7 +60,6 @@ namespace WebAPI.Controllers
         public void Delete(long id)
         {
             departmentBll.DeleteDepartment(id);
-            //departmentProcessor.Delete(id);
         }
     }
 }

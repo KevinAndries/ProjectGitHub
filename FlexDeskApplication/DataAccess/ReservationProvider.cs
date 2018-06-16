@@ -9,12 +9,6 @@ namespace DataAccessLayer
     public class ReservationProvider : IReservationProvider
     {
 
-        //private readonly string FlexDeskConnection;
-
-        //public ReservationProvider(string FlexDeskConnection)
-        //{
-        //    this.FlexDeskConnection = FlexDeskConnection;
-        //}
 
         private readonly string FlexDeskConnection;
 

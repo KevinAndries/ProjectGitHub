@@ -6,12 +6,7 @@ namespace DataAccessLayer
 {
     public class DepartmentProcessor : IDepartmentProcessor
     {
-        //private readonly string connectionString;
 
-        //public DepartmentProcessor(string connectionString)
-        //{
-        //    this.connectionString = connectionString;
-        //}
 
         private readonly string FlexDeskConnection;
 

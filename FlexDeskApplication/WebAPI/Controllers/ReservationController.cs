@@ -13,29 +13,6 @@ namespace WebAPI.Controllers
     {
 
 
-        //private readonly IReservationProvider reservationProvider;
-        //private readonly IReservationProcessor reservationProcessor;
-        //private readonly IFlexDeskProvider flexdeskProvider;
-        //private readonly IDepartmentProvider departmentProvider;
-        //private readonly IFloorProvider floorProvider;
-        //private readonly IBuildingProvider buildingProvider;
-        //private readonly IUserProvider userProvider;
-        //private readonly IReservationBll reservationBll;
-
-        //public ReservationController(IReservationProvider reservationProvider, IReservationProcessor reservationProcessor, IFlexDeskProvider flexdeskProvider, IDepartmentProvider departmentProvider, IFloorProvider floorProvider, IBuildingProvider buildingProvider, IUserProvider userProvider, IReservationBll reservationBll)
-        //{
-        //    this.reservationProvider = reservationProvider;
-        //    this.reservationProcessor = reservationProcessor;
-        //    this.flexdeskProvider = flexdeskProvider;
-        //    this.departmentProvider = departmentProvider;
-        //    this.floorProvider = floorProvider;
-        //    this.buildingProvider = buildingProvider;
-        //    this.userProvider = userProvider;
-        //    this.reservationBll = reservationBll;
-        //}
-
-
-
         private readonly IFlexDeskProvider flexdeskProvider;
         private readonly IDepartmentProvider departmentProvider;
         private readonly IFloorProvider floorProvider;
@@ -67,7 +44,6 @@ namespace WebAPI.Controllers
         [HttpGet("{id}", Name = "ReservationGet")]
         public Reservation Get(long id)
         {
-            //var reservation = reservationProvider.GetById(id);
             var reservation = reservationBll.GetReservationById(id);
             reservation.FlexDesk = flexdeskProvider.GetById(reservation.FlexDeskId);
             reservation.FlexDesk.Department = departmentProvider.GetById(reservation.FlexDesk.DepartmentId);
@@ -86,7 +62,6 @@ namespace WebAPI.Controllers
             reservation.FlexDesk = flexdeskProvider.GetById(reservation.FlexDeskId);
             reservation.User = userProvider.GetById(reservation.UserId);
             reservationBll.CreateReservation(reservation);
-            //reservationProcessor.Create(reservation);
         }
 
         // PUT api/Reservation/5
@@ -95,7 +70,6 @@ namespace WebAPI.Controllers
         {
             reservation.ReservationId = id;
             reservationBll.UpdateReservation(id, reservation);
-            //reservationProcessor.Update(reservation);
         }
 
         // DELETE api/Reservation/5
@@ -103,7 +77,6 @@ namespace WebAPI.Controllers
         public void Delete(long id)
         {
             reservationBll.DeleteReservation(id);
-            //reservationProcessor.Delete(id);
         }
     }
 }

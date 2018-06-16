@@ -35,16 +35,6 @@ namespace BusinessLogicLayer
             return floor;
         }
 
-        public Floor GetFlexDesksById(long deskid)
-        {
-            var flexdesk = floorProvider.GetFlexDeskById(deskid);
-            return flexdesk;
-            //var lstFlexDesks = new List<FlexDesk>();
-            //lstFlexDesks = (List<(FlexDesk>)floorProvider.GetFlexDeskById(deskid);
-            //lstFlexDesks.Add(flexdesk);
-
-        }
-
         public void CreateFloor(Floor floor)
         {
             floorProcessor.Create(floor);

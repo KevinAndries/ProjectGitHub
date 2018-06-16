@@ -11,18 +11,6 @@ namespace WebAPI.Controllers
     [Route("api/Building")]
     public class BuildingController : Controller
     {
-        ////Mag verwijderd worden?
-        //private readonly IBuildingProvider buildingProvider;
-        //private readonly IBuildingProcessor buildingProcessor;
-        //private readonly IBuildingBll buildingBll;
-
-        //public BuildingController(IBuildingProvider buildingProvider, IBuildingProcessor buildingProcessor, IBuildingBll buildingBll)
-        //{
-        //    this.buildingProvider = buildingProvider;
-        //    this.buildingProcessor = buildingProcessor;
-        //    this.buildingBll = buildingBll;
-        //}
-
 
 
         private readonly IBuildingBll buildingBll;
@@ -63,7 +51,6 @@ namespace WebAPI.Controllers
         {
 
             buildingBll.CreateBuilding(building);
-            //buildingProcessor.Create(building);  
         }
 
 
@@ -74,7 +61,6 @@ namespace WebAPI.Controllers
         {
             building.BuildingId = id;
             buildingBll.UpdateBuilding(id, building);
-            //buildingProcessor.Update(building);
         }
 
         // DELETE api/Building/5
@@ -82,7 +68,6 @@ namespace WebAPI.Controllers
         public void Delete(long id)
         {
             buildingBll.DeleteBuilding(id);
-            //buildingProcessor.Delete(id);
         }
 
     }

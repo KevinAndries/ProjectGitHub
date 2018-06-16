@@ -6,12 +6,7 @@ namespace DataAccessLayer
 {
     public class ReservationProcessor : IReservationProcessor
     {
-        //private readonly string connectionString;
 
-        //public  ReservationProcessor(string connectionString)
-        //{
-        //    this.connectionString = connectionString;
-        //}
 
         private readonly string FlexDeskConnection;
 

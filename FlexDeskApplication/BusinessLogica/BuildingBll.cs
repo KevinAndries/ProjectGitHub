@@ -65,17 +65,3 @@ namespace BusinessLogicLayer
         }
     }
 }
-
-
-
-
-//if (bCode.HasDuplicates())
-//{
-//    throw new Exception("Er zitten duplicaten in de lijst");
-//}
-
-
-//if (bName.HasDuplicates())
-//{
-//    throw new Exception("Er zitten duplicaten in de lijst");
-//}

@@ -1,0 +1,59 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.data-nok {
+    color:red;
+    font-weight:bold;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url('images/542945584.jpg');
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+#myCarousel {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.carousel-control.left {
+    margin-left: -25px;
+}
+
+.carousel-control.right {
+    margin-right: -25px;
+}
+
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.carousel .item {
+    height: 1000px;
+}
+.left carousel-control {
+    height: 2000px;
+}

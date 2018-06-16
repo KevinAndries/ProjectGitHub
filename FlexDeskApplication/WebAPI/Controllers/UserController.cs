@@ -12,17 +12,6 @@ namespace WebAPI.Controllers
     {
 
 
-        //private readonly IUserProvider userProvider;
-        //private readonly IUserProcessor userProcessor;
-        //private readonly IUserBll userBll;
-
-        //public UserController(IUserProvider userProvider, IUserProcessor userProcessor, IUserBll userBll)
-        //{
-        //    this.userProvider = userProvider;
-        //    this.userProcessor = userProcessor;
-        //    this.userBll = userBll;
-        //}
-
 
         private readonly IUserBll userBll;
 
@@ -39,7 +28,7 @@ namespace WebAPI.Controllers
         [HttpGet]
         public IEnumerable<User> Get()
         {
-            //return userProvider.Get();
+
             return userBll.ShowAllUsers();
         }
 
@@ -47,7 +36,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}", Name = "UserGet")]
         public User Get(long id)
         {
-            //return userProvider.GetById(id);
+
             return userBll.GetUserById(id);
         }
 
@@ -56,7 +45,7 @@ namespace WebAPI.Controllers
         public void Post([FromBody]User user)
         {
             userBll.CreateUser(user);
-            //userProcessor.Create(user);
+
         }
 
         // PUT api/User/5
@@ -65,7 +54,6 @@ namespace WebAPI.Controllers
         {
             user.UserId = id;
             userBll.UpdateUser(id, user);
-            //userProcessor.Update(user);
         }
 
         // DELETE api/User/5
@@ -73,7 +61,6 @@ namespace WebAPI.Controllers
         public void Delete(long id)
         {
             userBll.DeleteUser(id);
-            //userProcessor.Delete(id);
         }
     }
 }

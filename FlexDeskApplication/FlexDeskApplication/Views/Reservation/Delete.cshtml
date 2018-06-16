@@ -45,7 +45,7 @@
 
 <div style="border:1px solid black">
     <p align="center">@Model.Building.Name.ToUpper(): @Model.ReservationFloor.Name.ToUpper()</p>
-    <svg height="1000" width="1000">
+    <svg height="500" width="1000">
         @Html.Raw(Model.ReservationFloor.Svg.Replace("id=\"desk" + Model.ReservationUser.FlexDeskId + "\"", "id=\"" + Model.ReservationUser.FlexDeskId + "\" fill=\"green\" "))
     </svg>
 

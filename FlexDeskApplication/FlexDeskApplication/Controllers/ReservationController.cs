@@ -160,7 +160,7 @@ namespace MVC.Controllers
             }
             rvm.Building = buildingBll.GetBuildingById(floorBll.GetFloorById(departmentBll.GetDepartmentById(rvm.User.DepartmentId).FloorId).BuildingId);
 
-            rvm.Floors = floorBll.ShowAllFloors().Where(floor => floor.BuildingId == rvm.Building.BuildingId).ToList();            
+            rvm.Floors = floorBll.ShowAllFloors().Where(floor => floor.BuildingId == rvm.Building.BuildingId).ToList();
             foreach (var floor in rvm.Floors)
             {
                 floor.Department = departmentBll.ShowAllDepartments().Where(d => d.FloorId == floor.FloorId).ToList();
@@ -168,7 +168,6 @@ namespace MVC.Controllers
                 {
                     d.FlexDesk = flexDeskBll.ShowAllFlexdesks().Where(fd => fd.DepartmentId == d.DepartmentId).ToList();
                 }
-                rvm.AddDeskIds(floor);
             }
             rvm.Reservations = new ReservationFE().GetReservations(flexDeskBll, reservationBll.ShowAllReservations().Where(r => ((r.StartDate >= rvm.Start && r.StartDate <= rvm.End) || (r.EndDate >= rvm.Start && r.EndDate <= rvm.End)) || ((rvm.Start >= r.StartDate && rvm.Start <= r.EndDate) || (rvm.End >= r.StartDate && rvm.End <= r.EndDate))));
             

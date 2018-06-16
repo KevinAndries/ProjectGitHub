@@ -9,12 +9,7 @@ namespace DataAccessLayer
     public class FlexDeskProvider : IFlexDeskProvider
     {
 
-        //private readonly string FlexDeskConnection;
 
-        //public FlexDeskProvider(string FlexDeskConnection)
-        //{
-        //    this.FlexDeskConnection = FlexDeskConnection;
-        //}
 
         private readonly string FlexDeskConnection;
 

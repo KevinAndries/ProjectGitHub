@@ -72,32 +72,10 @@ namespace DataAccessLayer
 
                 floor = connection.Query<Floor>("SELECT FloorId, Name, Number, FloorCode, SVG, BuildingID FROM Floor WHERE floorId=@FloorId",
                     new { floorId = floorId }).FirstOrDefault();
-
-
-
-                //floor = connection.Query<Floor>("SELECT SVG, value tempSVG, substring(LEFT(value, charindex(', width', value) - 1), CHARINDEX('desk', value) + len('desk'), LEN(value)) as deskid FROM floor CROSS APPLY STRING_SPLIT(REPLACE(SVG, '><', '|'), '|') WHERE floorId = @FloorId and value not in ('[<svg', '/svg>]'); ",
-                //   new { floorId = floorId }).FirstOrDefault();
-
-
-
-                //Query voor extracten van de flexdesk id's uit svg
-                //SELECT SVG, value tempSVG,
-                //substring(LEFT(value, charindex(', width', value) - 1), CHARINDEX('desk', value) + len('desk'), LEN(value)) as deskid
-                //FROM floor
-                //CROSS APPLY STRING_SPLIT(REPLACE(SVG, '><', '|'), '|')
-                //WHERE floorId = @FloorId
-                //and value not in ('[<svg', '/svg>]');
-
             }
 
             return floor;
         }
-
-
-   
-
-
-
 
 
     }
