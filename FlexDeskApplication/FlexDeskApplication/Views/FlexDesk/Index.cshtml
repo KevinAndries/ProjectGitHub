@@ -8,7 +8,7 @@
 <h2>Index</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @Html.ActionLink("Create New", "Create", "FlexDesk", new { departmentId = Model.DepartmentId })
 </p>
 <table class="table">
     <thead>
@@ -46,7 +46,8 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.FlexDeskId }) |
                 @Html.ActionLink("Details", "Details", new { id = item.FlexDeskId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.FlexDeskId })
+                @Html.ActionLink("Delete", "Delete", new { id = item.FlexDeskId }) |
+                @Html.ActionLink("Reservations","ReservationsFlexDesk", "Reservation", new { flexDeskId = item.FlexDeskId })
             </td>
         </tr>
 }

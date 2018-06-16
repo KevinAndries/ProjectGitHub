@@ -51,7 +51,7 @@ namespace MVC.Controllers
                     rvm.User = userBll.ShowAllUsers().FirstOrDefault(u => u.Login == rvm.UserCode);
                     if (rvm.User == null)
                     {
-                        ViewData["Message2"] = "User not found";
+                        ViewData["message2"] = "User not found";
                         rvm.User = activeUser;
                         rvm.UserCode = activeUser.Login;
                     }
@@ -68,6 +68,7 @@ namespace MVC.Controllers
                 IEnumerable<Reservation> reservations = reservationBll.ShowAllReservations().Where(r => r.UserId == rvm.User.UserId && r.EndDate >= DateTime.Today);
                 rvm.Reservations = new ReservationFE().GetReservations(flexDeskBll, reservations);
 
+                ViewData["message"] = rvm.Message;
                 return View(rvm);
 
             }
@@ -96,10 +97,13 @@ namespace MVC.Controllers
                 rvm.User = userBll.GetUserById(rvm.UserId);
                 rvm.UserCode = rvm.User.Login;
 
-                if (rvm.Start==null || rvm.End==null)
+                if (rvm.Start==null)
                 {
                     rvm.Start = DateTime.Today;
-                    rvm.End = DateTime.Today;
+                }
+                if (rvm.End==null)
+                {
+                    rvm.End = rvm.Start;
                 }
                                 
                 // Check if dates are ok
@@ -109,7 +113,7 @@ namespace MVC.Controllers
                     IEnumerable<Reservation> reservations = reservationBll.ShowAllReservations().Where(r => r.UserId == activeUser.UserId && r.EndDate >= DateTime.Today);
                     rvm.Reservations = new ReservationFE().GetReservations(flexDeskBll, reservations);
                     //exception: Back to List
-                    ViewData["message"] = message;
+                    rvm.Message = message;
                     return RedirectToAction("Index", rvm);
                 }
 
@@ -120,18 +124,29 @@ namespace MVC.Controllers
                     ReservationFE reservation = rvm.Reservations.First(r => r.UserId == rvm.UserId);
                     //Exception: User has already reservation in this period
                      return RedirectToAction("Delete", routeValues: new { id = reservation.ReservationId, message = new Dictionary(HttpContext.Session.GetInt32("language")).Label25 });
-                }                
-                
+                }
+
+                IEnumerable<Absence> afwezigheden = absenceBll.ShowAllAbsences().Where(a => a.UserId == rvm.UserId);
+
+                if (afwezigheden.Any(a=> (a.StartDate>= rvm.Start && a.StartDate <=rvm.End) || (a.EndDate>= rvm.Start && a.EndDate <= rvm.End)) ||
+                    afwezigheden.Any(a=> (rvm.Start >= a.StartDate && rvm.Start <= a.EndDate) || (rvm.End >= a.StartDate && rvm.End <= a.EndDate)))
+                {
+                    //exception: User has already absence in this period;
+                    rvm.Message = rvm.Dictionary.Label29;
+                    return RedirectToAction("Index", rvm);
+                }
                 return View(rvm);              
 
             }
             catch (Exception)
             {
+                rvm.Floors = floorBll.ShowAllFloors().Where(floor => floor.BuildingId == rvm.Building.BuildingId).ToList();
                 return RedirectToAction("Index", "Home");
             }
 
         }
 
+        // add necessary data reservationviewmodel
         private void UpdateRvm(ReservationViewModel rvm)
         {
             if (rvm.Start == null)
@@ -144,7 +159,8 @@ namespace MVC.Controllers
                 rvm.User.Department = departmentBll.ShowAllDepartments().FirstOrDefault(d => d.DepartmentId == rvm.User.DepartmentId);
             }
             rvm.Building = buildingBll.GetBuildingById(floorBll.GetFloorById(departmentBll.GetDepartmentById(rvm.User.DepartmentId).FloorId).BuildingId);
-            rvm.Floors = floorBll.ShowAllFloors().Where(floor => floor.BuildingId == rvm.Building.BuildingId).ToList();
+
+            rvm.Floors = floorBll.ShowAllFloors().Where(floor => floor.BuildingId == rvm.Building.BuildingId).ToList();            
             foreach (var floor in rvm.Floors)
             {
                 floor.Department = departmentBll.ShowAllDepartments().Where(d => d.FloorId == floor.FloorId).ToList();
@@ -152,6 +168,7 @@ namespace MVC.Controllers
                 {
                     d.FlexDesk = flexDeskBll.ShowAllFlexdesks().Where(fd => fd.DepartmentId == d.DepartmentId).ToList();
                 }
+                rvm.AddDeskIds(floor);
             }
             rvm.Reservations = new ReservationFE().GetReservations(flexDeskBll, reservationBll.ShowAllReservations().Where(r => ((r.StartDate >= rvm.Start && r.StartDate <= rvm.End) || (r.EndDate >= rvm.Start && r.EndDate <= rvm.End)) || ((rvm.Start >= r.StartDate && rvm.Start <= r.EndDate) || (rvm.End >= r.StartDate && rvm.End <= r.EndDate))));
             
@@ -276,6 +293,56 @@ namespace MVC.Controllers
             }
             return desks;
         }   
+
+        public IActionResult ReservationsFlexDesk(long flexDeskId)
+        {
+            try
+            {
+                ReservationViewModel rvm = new ReservationViewModel
+                {
+                    Reservations = new ReservationFE().GetReservations(flexDeskBll, reservationBll.ShowAllReservations().Where(r => r.FlexDeskId == flexDeskId && r.EndDate >= DateTime.Today))
+                };
+                foreach (var item in rvm.Reservations)
+                {
+                    User user = userBll.GetUserById(item.UserId);
+                    item.UserName = user.FirstName + " " + user.Name;
+                }
+                ViewData["Title"] = "Reservations " + flexDeskBll.GetFlexDeskById(flexDeskId).FlexDeskCode;
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
+                return View(rvm);
+            }
+            catch (Exception)
+            {
+
+                return RedirectToAction("Index", "FlexDesk");
+            }
+        }
+
+        public IActionResult ReservationsUser(long userId)
+        {
+            try
+            {
+                ReservationViewModel rvm = new ReservationViewModel
+                {
+                    Reservations = new ReservationFE().GetReservations(flexDeskBll, reservationBll.ShowAllReservations().Where(r => r.UserId == userId && r.EndDate >= DateTime.Today))
+                };
+                
+                foreach (var item in rvm.Reservations)
+                {
+                    User user1 = userBll.GetUserById(item.UserId);
+                    item.UserName = user1.FirstName + " " + user1.Name;
+                }
+                User user2 = userBll.GetUserById(userId);
+                ViewData["Title"] = "Reservations " + user2.FirstName + " " + user2.Name;
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
+                return View(rvm);
+            }
+            catch (Exception)
+            {
+
+                return RedirectToAction("Index", "FlexDesk");
+            }
+        }
 
     }
 }

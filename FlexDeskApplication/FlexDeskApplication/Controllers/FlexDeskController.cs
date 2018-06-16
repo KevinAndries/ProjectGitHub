@@ -39,13 +39,15 @@ namespace MVC.Controllers
         // GET: FlexDesk/Details/5
         public ActionResult Details(long id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
             return View(flexDeskBll.GetFlexDeskById(id));
         }
 
         // GET: FlexDesk/Create
-        public ActionResult Create()
+        public ActionResult Create(long departmentId)
         {
-            return View();
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
+            return View(new FlexDesk { DepartmentId = departmentId });
         }
 
         // POST: FlexDesk/Create
@@ -61,17 +63,19 @@ namespace MVC.Controllers
                     flexDeskBll.CreateFlexDesk(desk);
                 }
 
-                 return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
+                return RedirectToAction(nameof(Index));
             }
         }
 
         // GET: FlexDesk/Edit/5
         public ActionResult Edit(long id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
             return View(flexDeskBll.GetFlexDeskById(id));
         }
 
@@ -86,6 +90,7 @@ namespace MVC.Controllers
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
                 if (activeUser.Administrator > 0)
                 {
+                    desk.FlexDeskId = id;
                     flexDeskBll.UpdateFlexDesk(id, desk);
                 }
 
@@ -93,6 +98,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }
@@ -100,6 +106,7 @@ namespace MVC.Controllers
         // GET: FlexDesk/Delete/5
         public ActionResult Delete(int id)
         {
+            ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
             return View(flexDeskBll.GetFlexDeskById(id));
         }
 
@@ -120,6 +127,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }

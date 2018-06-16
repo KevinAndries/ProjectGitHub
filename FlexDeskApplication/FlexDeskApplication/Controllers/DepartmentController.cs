@@ -48,10 +48,10 @@ namespace MVC.Controllers
         }
 
         // GET: Department/Create
-        public ActionResult Create()
+        public ActionResult Create(long floorId)
         {
             ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-            return View();
+            return View(new DepartmentViewModel { FloorId = floorId });
         }
 
         // POST: Department/Create
@@ -63,21 +63,21 @@ namespace MVC.Controllers
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
                 ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-
+                        
                 if (activeUser.Administrator > 0)
                 {
                     Department department = new Department
                     {
                         Name = dvm.Name,
                         DepartmentCode = dvm.DepartmentCode,
-                        FloorId = floorBll.ShowAllFloors().FirstOrDefault(f => f.FloorCode == dvm.FloorCode).FloorId,
-                        Svg = dvm.Svg,
+                        FloorId = dvm.FloorId,
+                        Svg = dvm.Svg
                     };
 
                     departmentBll.CreateDepartment(department);
                     long departmentId = departmentBll.ShowAllDepartments().FirstOrDefault(d => d.DepartmentCode == department.DepartmentCode).DepartmentId;
                     
-                    for (int i = 1; i < dvm.NumberOfDesks; i++)
+                    for (int i = 1; i < dvm.NumberOfDesks + 1; i++)
                     {
                         FlexDesk desk = new FlexDesk();
                         desk.DepartmentId = departmentId;
@@ -91,7 +91,7 @@ namespace MVC.Controllers
             }
             catch
             {
-                return View();
+                return RedirectToAction(nameof(Index));
             }
         }
 
@@ -114,6 +114,7 @@ namespace MVC.Controllers
 
                 if (activeUser.Administrator > 0)
                 {
+                    department.DepartmentId = id;
                     departmentBll.UpdateDepartment(id, department);
                 }
 
@@ -121,7 +122,7 @@ namespace MVC.Controllers
             }
             catch
             {
-                return View();
+                return RedirectToAction(nameof(Index));
             }
         }
 
@@ -155,6 +156,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }

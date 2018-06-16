@@ -17,13 +17,13 @@
                     <span asp-validation-for="UserCode" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="@Model.Dictionary.Label8 @Model.Dictionary.Label20 user" class="btn btn-default" />
+                    <input type="submit" value="Change user" class="btn btn-default" />
                 </div>
             </form>
         </div>
     </div>
 }
-<div class="dataNok">@ViewData["message"]</div>
+<div class="data-nok">@ViewData["message"]</div>
 <h2>@Model.Dictionary.Label8 @Model.Dictionary.Label14 @Model.User.FirstName @Model.User.Name</h2>
 
 @Html.ActionLink(@Model.Dictionary.Label11, "Create", "Absence", new { id=Model.UserId })

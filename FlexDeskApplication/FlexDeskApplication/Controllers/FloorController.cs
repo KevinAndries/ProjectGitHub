@@ -60,8 +60,7 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
-                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-
+                
                 if (activeUser.Administrator > 0)
                 {
                     floorBll.CreateFloor(floor);
@@ -71,6 +70,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }
@@ -90,10 +90,10 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
-                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-
+                
                 if (activeUser.Administrator > 0)
                 {
+                    floor.FloorId = id;
                     floorBll.UpdateFloor(id, floor);
                 }
 
@@ -101,6 +101,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }
@@ -131,6 +132,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }

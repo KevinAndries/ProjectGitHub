@@ -34,6 +34,23 @@ namespace MVC.Controllers
             }
         }
 
+        //Reset password
+        public ActionResult ResetPassword(long id)
+        {
+            try
+            {
+                User user = userBll.GetUserById(id);
+                user.Password = "FlexDesk";
+                userBll.UpdateUser(id, user);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception)
+            {
+
+                return RedirectToAction(nameof(Index));
+            }            
+        }
+
         // GET: User/Details/5
         public ActionResult Details(long id)
         {
@@ -42,10 +59,10 @@ namespace MVC.Controllers
         }
 
         // GET: User/Create
-        public ActionResult Create()
+        public ActionResult Create(long departmentId)
         {
             ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-            return View();
+            return View(new User { DepartmentId = departmentId });
         }
 
         // POST: User/Create
@@ -57,8 +74,7 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
-                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-
+                
                 if (activeUser.Administrator > 0)
                 {
                     //userBll.CreateUser(user);
@@ -68,6 +84,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }
@@ -89,10 +106,11 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
-                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-
+                
                 if (activeUser.Administrator > 0)
                 {
+                    user.UserId = id;
+                    user.Password = userBll.GetUserById(id).Password;
                     userBll.UpdateUser(id, user);
                 }
 
@@ -120,8 +138,7 @@ namespace MVC.Controllers
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
-                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-
+                
                 if (activeUser.Administrator > 0)
                 {
                     userBll.DeleteUser(id);
@@ -131,6 +148,7 @@ namespace MVC.Controllers
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }

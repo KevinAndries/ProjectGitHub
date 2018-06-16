@@ -88,8 +88,8 @@ namespace MVC.Controllers
              }
              catch
              {
-
-                    return View();
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
+                return View();
               }
             
         }
@@ -111,13 +111,14 @@ namespace MVC.Controllers
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
                 if (activeUser.Administrator > 0)
                 {
+                    building.BuildingId = id;
                     buildingBll.UpdateBuilding(id, building);
                 }
-                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-                return RedirectToAction(nameof(Index));
+               return RedirectToAction(nameof(Index));
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }
@@ -138,11 +139,11 @@ namespace MVC.Controllers
             {
                 DeleteBuilding(id);
 
-                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
+                ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
                 return View();
             }
         }

@@ -47,8 +47,6 @@ namespace WebAPI
 
             var connectionString = config["ConnectionString:FlexDeskConnection"];
 
-
-
             services.AddSingleton<IDBConnection>(f => new DBConnection { connectionString = connectionString });
             //services.AddTransient<IBuildingProvider>(f =>
             //    new BuildingProvider(config["ConnectionString:FlexDeskConnection"]));

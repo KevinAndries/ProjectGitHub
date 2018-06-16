@@ -21,6 +21,7 @@ namespace MVC.Models
         public DateTime? CreationDate { get; set; }
         public long FlexDeskId { get; set; }
         public long UserId { get; set; }
+        public string UserName { get; set; }
 
         public FlexDesk FlexDesk { get; set; }
         public string NameCreator { get; set; }

@@ -28,7 +28,7 @@ namespace DataAccessLayer
                 absences = connection.Query<Absence>("SELECT AbsenceID, StartDate, EndDate, Creator, CreationDate, Status, StatusDate, Description, UserId FROM Absence");
                 var users = connection.Query<User>(
                     "SELECT * FROM [dbo].[User] WHERE UserId IN @Ids",
-                    new {Ids = absences.Select(c => c.AbsenceId).Distinct()});
+                    new {Ids = absences.Select(c => c.UserId).Distinct()});
                 foreach (var absence in absences)
                 {
                     absence.User = users.Single(x => x.UserId == absence.UserId);

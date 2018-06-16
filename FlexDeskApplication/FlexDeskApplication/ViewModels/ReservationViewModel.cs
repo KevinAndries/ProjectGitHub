@@ -36,7 +36,10 @@ namespace MVC.ViewModels
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime? End { get; set;}
         public string UserCode { get; set; }
-
+        public long Creator { get; set; }
+        public DateTime CreationDate { get; set; }
+        public string UserName { get; set; }
+        public string FlexDeskCode { get; set; }
         public long ReservationId { get; set; }
         public ReservationFE ReservationUser { get; set; }
         public Floor ReservationFloor {
@@ -51,71 +54,97 @@ namespace MVC.ViewModels
             }
         }
         public Dictionary Dictionary { get; set; }
-
         public List<int?> DefaultDesks { get; set; }
-
         public bool DatesOK { get; set; }
         public string Message{ get; set; }
 
+
+        //METHODS
+        
+        // deskid in SVG vervangen door id' van FlexDesk in database
+        public void AddDeskIds(Floor floor)
+        {
+            string svgNew = floor.Svg;
+            int deskteller = 1;
+
+            IEnumerable<Department> sortedDepartments = floor.Department.OrderBy(d => d.DepartmentId);
+            for (int i = 0; i < floor.Department.Count; i++)
+            {
+                IEnumerable<FlexDesk> sortedDesks = sortedDepartments.ElementAt(i).FlexDesk.OrderBy(f => f.FlexDeskId);
+                for (int j = 0; j < sortedDepartments.ElementAt(i).FlexDesk.Count; j++)
+                {
+                    svgNew = svgNew.Replace("id=\"desk" + deskteller + "\"", "id=\"desk" + sortedDesks.ElementAt(j).FlexDeskId + "\"");
+                    deskteller += 1;
+                }
+            }
+                        
+            floor.Svg = svgNew;
+        }
+
+        //voegt " toe aan html, of vervangt ' door "
         private string AddQuotes(string svg)
         {
             string svg2 = "";
             bool newString = false;
-
-            if (!svg.Contains('"'))
+            if (svg!=null)
             {
-                if (svg.Contains("'"))
+                if (!svg.Contains('"'))
                 {
-                    svg2 = AddQuotes(svg.Replace("'", ""));
-                }
-                else
-                {
-                    foreach (char c in svg)
+                    if (svg.Contains("'"))
                     {
-                        switch (c)
+                        svg2 = AddQuotes(svg.Replace("'", ""));
+                    }
+                    else
+                    {
+                        foreach (char c in svg)
                         {
-                            case '=':
-                                svg2 = svg2 + c + '"';
-                                newString = true;
-                                break;
-                            case ',':
-                                if (newString)
-                                {
-                                    svg2 = svg2 + '"' + ' ';
-                                    newString = false;
-                                }
-                                else
-                                {
+                            switch (c)
+                            {
+                                case '=':
+                                    svg2 = svg2 + c + '"';
+                                    newString = true;
+                                    break;
+                                case ',':
+                                    if (newString)
+                                    {
+                                        svg2 = svg2 + '"' + ' ';
+                                        newString = false;
+                                    }
+                                    else
+                                    {
+                                        svg2 += c;
+                                    }
+                                    break;
+                                case ' ':
+                                case '/':
+                                case '>':
+                                    if (newString)
+                                    {
+                                        svg2 += '"';
+                                        newString = false;
+                                    }
                                     svg2 += c;
-                                }
-                                break;
-                            case ' ':
-                            case '/':
-                            case '>':
-                                if (newString)
-                                {
-                                    svg2 += '"';
-                                    newString = false;
-                                }
-                                svg2 += c;
-                                break;
-                            default:
-                                svg2 += c;
-                                break;
+                                    break;
+                                default:
+                                    svg2 += c;
+                                    break;
+                            }
+
                         }
 
                     }
-
+                }
+                else
+                {
+                    svg2 = svg;
                 }
             }
-            else
-            {
-                svg2 = svg;
-            }
+            
 
             return svg2;
         }
 
+        //controleert of de ingegeven datetimes correct zijn
         public string CheckDates(int? language)
         {
             DatesOK = true;

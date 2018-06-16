@@ -26,10 +26,13 @@
                 <div class="editor-field">
                     @Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password" } })
                 </div>
-                <input style="margin:5px" type="submit" value="Inloggen" />
+                <input style="margin:5px" type="submit" value="@Model.Dictionary.Label30" />
             </fieldset>
         </div>
     }
 }
+<p>
+    @Html.ActionLink(Model.Dictionary.Label31, "NewPassword", "Home")
+</p>
 
 

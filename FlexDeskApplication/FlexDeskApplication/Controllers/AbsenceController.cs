@@ -78,15 +78,23 @@ namespace MVC.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult CreateAbsence(AbsenceViewModel avm)
-        {
+        {          
+            
             try
             {
-
-                if (HttpContext.Session.GetInt32("userId")>0)
+                if (HttpContext.Session.GetInt32("userId") > 0)
                 {
-
+                    if (avm.StartDate == null)
+                    {
+                        avm.StartDate = DateTime.Today;
+                    }
+                    if (avm.EndDate == null)
+                    {
+                        avm.StartDate = avm.StartDate;
+                    }
                     avm.Dictionary = new Dictionary(HttpContext.Session.GetInt32("language"));
-                    if (reservationBll.ShowAllReservations().Where(r1 => r1.UserId==avm.UserId).FirstOrDefault(r=>(r.StartDate >= avm.StartDate && r.StartDate<=avm.EndDate)||(r.EndDate>=avm.StartDate&&r.EndDate <= avm.EndDate))==null)
+                    if (reservationBll.ShowAllReservations().Where(r1 => r1.UserId == avm.UserId).FirstOrDefault(r => (r.StartDate >= avm.StartDate && r.StartDate <= avm.EndDate) || (r.EndDate >= avm.StartDate && r.EndDate <= avm.EndDate)) == null &&
+                        reservationBll.ShowAllReservations().Where(r1 => r1.UserId == avm.UserId).FirstOrDefault(r => (avm.StartDate >= r.StartDate && avm.StartDate <= r.EndDate) || (avm.EndDate >= r.StartDate && avm.EndDate <= r.EndDate)) == null)
                     {
                         Absence absence = new Absence
                         {
@@ -95,7 +103,9 @@ namespace MVC.Controllers
                             EndDate = avm.EndDate,
                             Description = avm.Description,
                             CreationDate = DateTime.Now,
-                            Creator = HttpContext.Session.GetInt32("userId")
+                            Creator = HttpContext.Session.GetInt32("userId"),
+                            Status = 0,
+                            StatusDate = DateTime.Now
                         };
 
                         if (HttpContext.Session.GetInt32("admin") > 0 || avm.UserId == absence.Creator)
@@ -107,8 +117,8 @@ namespace MVC.Controllers
                     {
                         avm.ConflictReservatie = true;
                     }
-                }             
-                
+                }
+
                 avm.Absences = new AbsenceFE().GetAbsensesFE(absenceBll.ShowAllAbsences().Where(a => a.UserId == avm.UserId && a.EndDate >= DateTime.Today));
                 avm.UserCode = userBll.GetUserById(avm.UserId).Login;
                 ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language") };
@@ -140,19 +150,20 @@ namespace MVC.Controllers
         // POST: Absence/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(long id, AbsenceViewModel absence)
+        public ActionResult Delete(long id, AbsenceViewModel avm)
         {
             try
             {
                 activeUser = userBll.GetUserById((long)HttpContext.Session.GetInt32("userId"));
-                
+                string userCode = userBll.GetUserById(absenceBll.GetAbsenceById(id).UserId).Login;
+                Absence absence = absenceBll.GetAbsenceById(id);
                 if (activeUser.Administrator > 0 || activeUser.UserId==absence.UserId )
                 {
                     absenceBll.DeleteAbsence(id);
                 }
 
                 ViewData["sessionData"] = new int?[] { HttpContext.Session.GetInt32("admin"), HttpContext.Session.GetInt32("language")};
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index), new AbsenceViewModel { UserCode = userCode });
             }
             catch
             {
