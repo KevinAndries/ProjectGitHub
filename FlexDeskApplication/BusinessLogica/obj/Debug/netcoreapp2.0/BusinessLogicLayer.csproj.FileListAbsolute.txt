@@ -10,3 +10,15 @@ C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.csproj.CopyComplete
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.dll
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogicLayer.deps.json
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogicLayer.pdb
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.dll
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogicLayer.pdb

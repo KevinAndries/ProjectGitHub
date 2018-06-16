@@ -41,19 +41,3 @@ C:\Users\geert\Documents\eindwerk\FlexDeskApplication 20180520\FlexDeskApplicati
 C:\Users\geert\Documents\eindwerk\FlexDeskApplication 20180520\FlexDeskApplication 20180520\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.AssemblyInfo.cs
 C:\Users\geert\Documents\eindwerk\FlexDeskApplication 20180520\FlexDeskApplication 20180520\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.dll
 C:\Users\geert\Documents\eindwerk\FlexDeskApplication 20180520\FlexDeskApplication 20180520\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.pdb
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\MVC.deps.json
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\MVC.runtimeconfig.json
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\MVC.runtimeconfig.dev.json
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\MVC.dll
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\MVC.pdb
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\BusinessLogicLayer.dll
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\DataAccessLayer.dll
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\BusinessLogicLayer.pdb
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\bin\Release\netcoreapp2.0\DataAccessLayer.pdb
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.csprojAssemblyReference.cache
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.csproj.CoreCompileInputs.cache
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.AssemblyInfoInputs.cache
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.AssemblyInfo.cs
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.csproj.CopyComplete
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.dll
-C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\FlexDeskApplication\obj\Release\netcoreapp2.0\MVC.pdb

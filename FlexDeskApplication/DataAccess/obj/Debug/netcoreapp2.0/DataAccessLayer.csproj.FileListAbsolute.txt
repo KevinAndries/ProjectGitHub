@@ -7,3 +7,12 @@ C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
 C:\Users\Kevin Andries\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccessLayer.deps.json
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\andri\Desktop\ProjectGitHub\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb

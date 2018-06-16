@@ -58,6 +58,29 @@ namespace MVC.ViewModels
         public bool DatesOK { get; set; }
         public string Message{ get; set; }
 
+
+        //METHODS
+        
+        // deskid in SVG vervangen door id' van FlexDesk in database
+        public void AddDeskIds(Floor floor)
+        {
+            string svgNew = floor.Svg;
+            int deskteller = 1;
+
+            IEnumerable<Department> sortedDepartments = floor.Department.OrderBy(d => d.DepartmentId);
+            for (int i = 0; i < floor.Department.Count; i++)
+            {
+                IEnumerable<FlexDesk> sortedDesks = sortedDepartments.ElementAt(i).FlexDesk.OrderBy(f => f.FlexDeskId);
+                for (int j = 0; j < sortedDepartments.ElementAt(i).FlexDesk.Count; j++)
+                {
+                    svgNew = svgNew.Replace("id=\"desk" + deskteller + "\"", "id=\"desk" + sortedDesks.ElementAt(j).FlexDeskId + "\"");
+                    deskteller += 1;
+                }
+            }
+                        
+            floor.Svg = svgNew;
+        }
+
         //voegt " toe aan html, of vervangt ' door "
         private string AddQuotes(string svg)
         {
