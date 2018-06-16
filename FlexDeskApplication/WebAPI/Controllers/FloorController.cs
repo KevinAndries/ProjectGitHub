@@ -11,17 +11,7 @@ namespace WebAPI.Controllers
     public class FloorController : Controller
     {
 
-        //private readonly IFloorProvider floorProvider;
-        //private readonly IFloorProcessor floorProcessor;
-        //private readonly IFloorBll floorBll;
-
-        //public FloorController(IFloorProvider floorProvider, IFloorProcessor floorProcessor, IFloorBll floorBll)
-        //{
-        //    this.floorProvider = floorProvider;
-        //    this.floorProcessor = floorProcessor;
-        //    this.floorBll = floorBll;
-        //}
-
+        //Ophalen BusinessLogica die doorgegeven wordt aan de WebApi Controller Klasse om een dependency te creëeren 
         private readonly IFloorBll floorBll;
 
         public FloorController(IFloorBll floorBll)
@@ -30,11 +20,9 @@ namespace WebAPI.Controllers
             this.floorBll = floorBll;
         }
 
+        //Hieronder wordt de routering bepaalt door bepaalde action methods toe te wijzen. 
+        //Deze zullen dan de requesten die binnenkomen behandelen en de juiste routering parameters meegeven (=attributeRouting)
 
-        // <summary>
-        // Vraag hier een overzicht met alle verdiepingen.
-        // </summary>
-        // <returns>Lijst met alle verdiepingen</returns>
         // GET api/Floor
         [HttpGet]
         public IEnumerable<Floor> Get()
@@ -48,7 +36,6 @@ namespace WebAPI.Controllers
         [HttpGet("{id}", Name = "FloorGet")]
         public Floor Get(long id)
         {
-            //return floorProvider.GetById(id);
             return floorBll.GetFloorById(id);
         }
 
@@ -56,19 +43,21 @@ namespace WebAPI.Controllers
 
         // POST api/Floor
         [HttpPost]
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         public void Post([FromBody]Floor floor)
         {
-            //floorProcessor.Create(floor);
             floorBll.CreateFloor(floor);
         }
 
         // PUT api/Floor/5
         [HttpPut("{id}")]
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         public void Put(long id, [FromBody]Floor floor)
         {
             floor.FloorId = id;
             floorBll.UpdateFloor(id, floor);
-            //floorProcessor.Update(floor);
         }
 
         // DELETE api/Reservaties/5

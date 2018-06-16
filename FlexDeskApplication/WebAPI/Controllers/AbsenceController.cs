@@ -12,7 +12,7 @@ namespace WebAPI.Controllers
     {
 
 
-            
+        //Ophalen BusinessLogica die doorgegeven wordt aan de WebApi Controller Klasse om een dependency te creëeren    
         private readonly IAbsenceBll absenceBll;
 
 
@@ -22,7 +22,8 @@ namespace WebAPI.Controllers
         }
 
 
-
+        //Hieronder wordt de routering bepaalt door bepaalde action methods toe te wijzen. 
+        //Deze zullen dan de requesten die binnenkomen behandelen en de juiste routering parameters meegeven (=attributeRouting)
 
         // GET api/Absence
         [HttpGet]
@@ -40,6 +41,8 @@ namespace WebAPI.Controllers
 
         // POST api/Absence
         [HttpPost]
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         public void Post([FromBody]Absence absence)
         {
             absenceBll.CreateAbsence(absence);
@@ -48,6 +51,8 @@ namespace WebAPI.Controllers
 
         // PUT api/Absence/5
         [HttpPut("{id}")]
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         public void Put(long id, [FromBody]Absence absence)
         {
             absence.AbsenceId = id;

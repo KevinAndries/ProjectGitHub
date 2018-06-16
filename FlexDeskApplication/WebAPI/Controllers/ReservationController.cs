@@ -12,7 +12,7 @@ namespace WebAPI.Controllers
     public class ReservationController : Controller
     {
 
-
+        //Ophalen BusinessLogica die doorgegeven wordt aan de WebApi Controller Klasse om een dependency te creëeren
         private readonly IFlexDeskProvider flexdeskProvider;
         private readonly IDepartmentProvider departmentProvider;
         private readonly IFloorProvider floorProvider;
@@ -31,6 +31,8 @@ namespace WebAPI.Controllers
             this.reservationBll = reservationBll;
         }
 
+        //Hieronder wordt de routering bepaalt door bepaalde action methods toe te wijzen. 
+        //Deze zullen dan de requesten die binnenkomen behandelen en de juiste routering parameters meegeven (=attributeRouting)
 
         // GET api/Reservation
         [HttpGet]
@@ -58,6 +60,8 @@ namespace WebAPI.Controllers
         // POST api/Reservation
         [HttpPost]
         public void Post([FromBody]Reservation reservation)
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         {
             reservation.FlexDesk = flexdeskProvider.GetById(reservation.FlexDeskId);
             reservation.User = userProvider.GetById(reservation.UserId);
@@ -67,6 +71,8 @@ namespace WebAPI.Controllers
         // PUT api/Reservation/5
         [HttpPut("{id}")]
         public void Put(long id, [FromBody]Reservation reservation)
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         {
             reservation.ReservationId = id;
             reservationBll.UpdateReservation(id, reservation);

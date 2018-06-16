@@ -12,24 +12,23 @@ namespace WebAPI.Controllers
     {
 
 
-
+        //Ophalen BusinessLogica die doorgegeven wordt aan de WebApi Controller Klasse om een dependency te creëeren
         private readonly IDepartmentBll departmentBll;
 
         public  DepartmentController(IDepartmentBll departmentBll)
         {
-
             this.departmentBll = departmentBll;
         }
 
 
+        //Hieronder wordt de routering bepaalt door bepaalde action methods toe te wijzen. 
+        //Deze zullen dan de requesten die binnenkomen behandelen en de juiste routering parameters meegeven (=attributeRouting)
 
         // GET api/Department
         [HttpGet]
         public IEnumerable<Department> Get()
         {
-            //return departmentProvider.Get();
-            return departmentBll.ShowAllDepartments();
-          
+            return departmentBll.ShowAllDepartments();       
         }
 
         // GET api/Department/5
@@ -41,6 +40,8 @@ namespace WebAPI.Controllers
 
         // POST api/Department
         [HttpPost]
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         public void Post([FromBody]Department department)
         {
             departmentBll.CreateDepartment(department);
@@ -49,6 +50,8 @@ namespace WebAPI.Controllers
 
         // PUT api/Department/5
         [HttpPut("{id}")]
+        //implementatie REST protocol voor met de JSON code langs front-end overweg te kunnen [FromBody]
+        //Het [FromBody] attribuut zal gebruikt worden om het content type te bepalen
         public void Put(long id, [FromBody]Department department)
         {
             department.DepartmentId = id;
