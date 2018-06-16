@@ -18,7 +18,10 @@ namespace WebAPI.Controllers
 
         public AbsenceController(IAbsenceBll absenceBll)
         {
+
+
             this.absenceBll = absenceBll;
+
         }
 
 

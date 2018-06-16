@@ -1,0 +1,33 @@
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.deps.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.deps.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.pdb

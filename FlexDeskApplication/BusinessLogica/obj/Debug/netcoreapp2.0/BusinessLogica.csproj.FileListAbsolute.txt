@@ -1,0 +1,27 @@
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.deps.json
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.AssemblyInfo.cs
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\source\repos\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.deps.json
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\Projectwerk\Code visual studio\FlexDeskApplication - 20180304\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.deps.json
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\bin\Debug\netcoreapp2.0\BusinessLogica.pdb
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.csprojResolveAssemblyReference.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.AssemblyInfoInputs.cache
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.AssemblyInfo.cs
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.dll
+C:\Users\Kevin Andries\Desktop\FlexDeskApplication 20180311\FlexDeskApplication 20180311\FlexDeskApplication\BusinessLogica\obj\Debug\netcoreapp2.0\BusinessLogica.pdb
